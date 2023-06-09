@@ -1,0 +1,189 @@
+
+
+*{
+margin: 0;
+padding: 0;
+font-family: TTLakesCompressed-Black;
+}
+
+html{
+    box-sizing:border-box;
+}
+
+*,*::after*::before{
+    box-sizing:inherit;
+}
+
+body{
+    min-width: 320px;
+    
+}
+
+
+/* 1 часть Лого и виджеты */
+.container{
+    padding: 0 16px;
+}
+
+.header{
+    background-color: white;
+    border-bottom: 1px solid #D9FFF5 ;
+}
+
+ .heder__inner{
+    min-height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+
+
+.heading{
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px;
+ }
+
+
+ /* 2 часть Заголовок и скролл */
+main{
+    background-color: #F8F8F8 ;
+}
+h1{
+    font-size: 35px;
+    width: 350px;
+    padding-left: 10px;
+    letter-spacing: -1px;
+}
+
+.main-img{
+    height: 45px;
+}
+
+.nav-scroller{
+    display: flex;
+    justify-content: center;
+}
+
+.gradient{
+    position: absolute;
+     top: 10;
+    right: 0;
+    height: 45px;
+    width: 20px;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
+    
+    
+}
+
+.nav-scroller__item{
+    display: inline-block; 
+    height: 20px;
+    color: #7E7E82; 
+    font: 120% "trebuchet ms", sans-serif;
+    font-size: 16px;;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+.nav-scroller__item:active{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: white;
+    
+}
+
+.nav-scroller__items{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    overflow-x: auto;
+    list-style-type: none;
+    white-space: nowrap;
+    padding-left: 16px;
+    z-index: 9;
+}
+
+
+.nav-scroller__items::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul.nav-scroller__items li.selected a {
+    color: #7E7E82;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  ul.nav-scroller__items li a:hover{
+    color: #7E7E82;
+  }
+
+/* 3 часть контент текст */
+
+
+p{
+margin: 0;
+}
+
+.text{
+    font-size: 19px;
+    color: #1B1C21;
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;;
+    letter-spacing: 0.20000000298023224px;
+    line-height: 18px;
+    text-align: left;
+}
+
+#more {
+    display: none;
+}
+
+
+.read-more-inline{
+
+
+}
+.read-more {
+    display: flex;
+    justify-content: letter-spacing;
+    color:  #1B1C21;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;;
+    font-weight: bold;
+    background-color: #F8F8F8 ;
+  }
+  
+  .read-more:hover {
+    background-color: #7E7E82;
+  }
+
+.ikon-read-more{
+    height: 13px;
+    padding-left: 10px ;
+    padding-right: 20px;
+    padding-top: 5px;
+    
+}
+
+.photo_banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.photo_banner-img{
+    width: 400px;
+}
+
