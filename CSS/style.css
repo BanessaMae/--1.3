@@ -16,7 +16,7 @@ html{
 
 body{
     min-width: 320px;
-    
+    background-color: #F8F8F8 
 }
 
 
@@ -30,14 +30,14 @@ body{
     border-bottom: 1px solid #D9FFF5 ;
 }
 
- .heder__inner{
+
+
+ .header__inner{
     min-height: 87px;
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
-
-
 
 
 .heading{
@@ -47,6 +47,10 @@ body{
     padding: 40px 0 20px;
  }
 
+ .line_burger ,.phone__ikon, .chat__ikon, .profile__ikon , .text_large_screen, .big_screen {
+    display: none;
+ }
+ 
 
  /* 2 часть Заголовок и скролл */
 main{
@@ -58,6 +62,8 @@ h1{
     padding-left: 10px;
     letter-spacing: -1px;
 }
+
+
 
 .main-img{
     height: 45px;
@@ -127,21 +133,16 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
 
 /* 3 часть контент текст */
 
-
-p{
-margin: 0;
-}
-
 .text{
-    font-size: 19px;
+    font-size: 16px;
     color: #1B1C21;
     height: 90px;
     padding-top: 20px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 20px;;
+    padding-bottom: 10px;;
     letter-spacing: 0.20000000298023224px;
-    line-height: 18px;
+    line-height: 20px;
     text-align: left;
 }
 
@@ -163,6 +164,7 @@ margin: 0;
     padding-left: 20px;;
     font-weight: bold;
     background-color: #F8F8F8 ;
+    padding-top: 20px;
   }
   
   .read-more:hover {
@@ -187,3 +189,159 @@ margin: 0;
     width: 400px;
 }
 
+
+
+/* CSS 768px */
+
+@media (min-width : 768px) and (max-width: 1119px) {
+    
+    .logo {
+        padding-right: 250px;
+    }
+
+
+    .line_burger ,.phone__ikon, .chat__ikon, .profile__ikon  {
+        display:block;
+     }
+    
+
+    .heading {
+    display: flex;
+    justify-content: left;
+    }
+
+    .about_servise{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #more{
+        display: block;
+        width: 301px;
+        height: 40px;
+        overflow: hidden;
+        padding-top: 20px;
+        margin: 0;
+    }
+        
+    .read-more-inline{
+        padding-top: 40px;
+        }
+
+    .text{
+         padding-top: 0px;
+        }
+
+    .photo_banner-img{
+        border-radius:5px;
+        padding-bottom: 50px;
+    }
+
+}
+
+/* CSS 1120px */
+@media (min-width : 1120px) and (max-width: 1440px) {
+    .menu__ikon, .line_burger, .logo, .line_ikon_left {
+        display: none;
+    }
+
+    .container{
+        float: right;
+        display: flex;
+        width: 420px;
+        align-items: center;
+        padding: 40px 0 0px;
+        height: 60px;
+    }
+
+    .heading{
+        float: left;
+        display: flex;
+        width: 700px;
+        padding: 40px 0 0px;
+        height: 60px;
+    }
+
+    h1{
+        width: 650px;
+    }
+
+    .settings_ikon{
+        padding: 10px;
+      
+    }
+    .header__inner{
+       
+    }
+
+    .text_large_screen{
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+        float: left;
+        height: 24px;
+        font-size: 18px;
+
+    }
+    .text_large_screen{
+        padding-right: 20px;
+    }
+
+    .nav-scroller {
+        display: inline-block;
+    }
+
+    .small_screen{
+        display: none;
+    }
+
+  .big_screen{
+    display: block;
+  }
+
+  .nav-scroller__item{
+    padding: 10px 20px 10px 20px;
+  }
+
+  .nav-scroller__items{
+    flex-wrap: wrap;
+  }
+
+  .about_servise{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    
+}
+
+  #more{
+    display: block;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.photo_banner{
+    padding-top: 0px;
+}
+
+.photo_banner-img{
+    border-radius:5px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    height: 383px;
+    width: 531px;
+}
+.read-more{
+    padding-top: 120px;
+    }
+
+.text{
+     padding-top: 20px;
+    width: 500px;
+    font-size: 20px;
+}
+}
