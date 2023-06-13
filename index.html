@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,119 +16,124 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="menu__ikon">
+        <!-- <div class="container"> -->
+          <div class="menu header__menu header__menu--mod">
             <a class="menu__link">
               <img src="/img/burger.svg" />
             </a>
           </div>
-        <div class="line_burger">
-        <img src="/img/divider.svg" />
-      </div>
-          <div class="logo">
+          <div class="line header__line header__line--mod--one">
+            <img src="/img/divider.svg" />
+          </div>
+          <div class="logo header__logo header__logo--mod">
             <a class="logo__link">
               <img src="/img/Group.svg" />
             </a>
           </div>
-          <div class="phone__ikon">
-          <a class="phone__link">
+          <div class="phone header__phone header__phone--mod">
+          <a class=" phone__link">
               <img src="/img/size768/call.svg" />
             </a>
         </div>
-          <div class="chat__ikon">
+          <div class="chat header__chat header__chat--mod">
           <a class="chat__link">
               <img src="/img/size768/chat.svg" />
             </a>
         </div>
-          <div class="profile__ikon">
+          <div class="profile header__profile header__profile--mod">
           <a class="profile__link">
               <img src="/img/size768/profile.svg" />
             </a>
         </div>
 
-          <div class="line_ikon_left">
+          <div class="line header__line header__line--mod--two">
             <img src="/img/divider.svg" />
           </div>
-          <div class="settings_ikon">
-            <span class="text_large_screen">Оставить заявку</span>
+          <div class="settings header__settings header__settings--mod">
+            <span class="text-settings settings__text-settings">Оставить заявку</span>
             <a class="settings__link"> 
               <img src="/img/repair.svg" />
             </a>
-         
           </div>
-          <div class="search_ikon"> 
-            <span class="text_large_screen">Статус ремонта</span>
+          <div class="search header__search header__search--mod"> 
+            <span class="text-search search__text-search">Статус ремонта</span>
             <a class="search__link">
               <img src="/img/checkstatus.svg" />
             </a>
           </div>
         </div>
-      </div>
+      
     </header>
 
+
+
+
+
     <main class="main">
-      <div class="container_main">
-        <div class="heading">
-          <img class="main-img" src="/img/highlight.svg" />
-          <h1>Услуги и сервисы</h1>
+      
+        <div class="heading main__heading main__heading--mod">
+          <img class="img heading__img heading__img--mod" src="/img/highlight.svg" />
+          <h1 class="content-name heading__content-name heading__content-name--mod">Услуги и сервисы</h1>
         </div>
 
-        <div class="nav-scroller">
-          
-          <ul class="nav-scroller__items">
-            <li class="big_screen">
-              <a class="nav-scroller__item" href="/index.html"
+        <div class="scroller main__scroller main__scroller--mod">
+          <ul class="items scroller__items scroller__items--mod">
+            
+            <li class="el1 items__el items__el--mod">
+              <a class=" link el1-link  el1-link--mod" href="/index.html"
                 >Ремонтируемые бренды</a
               >
             </li>
 
-            <li class="selected">
-              <a class="nav-scroller__item" href="/index.html"
+            <li class=" selected el2 items__el items__el--mod">
+              <a class=" link el2-link" href="/index.html"
                 >Ремонтируемые устройства</a
               >
             </li>
-            <li class="small_screen"><a class="nav-scroller__item" href="#">Дополнительные услуги</a></li>
+            <li class="el3 items__el items__el--mod"><a class="link el4-link" href="#">Дополнительные услуги</a></li>
             <li>
-              <a class="nav-scroller__item" href="#"
+              <a class=" link el3-link" href="#"
                 >Цены на услуги</a
               >
             </li>
-            <li class="big_screen">
-              <a class="nav-scroller__item" href="#"
+            <li class="el5 items__el items__el--mod">
+              <a class=" link el4-link" href="#"
                 >Адреса сервисных центров</a
               >
             </li>
             <li>
-              <a class="nav-scroller__item" href="#">Специальные цены</a>
+              <a class=" link el6-link" href="#">Специальные цены</a>
             </li>
-            <li><a class="nav-scroller__item" href="#">Отзывы</a></li>
+            <li><a class=" link el7-link" href="#">Отзывы</a></li>
             <div class="gradient"></div>
           </ul>
 
         </div>
-        <div class="about_servise">
-        <div class="text-content">
-          <p class="text-content__first-paragraph">
+
+
+
+        <div class="content">
+        <div class="about-service content__about-service">
+          <p class="first-paragraph about-service__first-paragraph">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.</p>
-          <p class="text-content__second-paragraph">
+          <p class="second-paragraph about-service__second-paragraph">
             Мы успешно работаем с 1992 года и заслужили репутацию надежного
             партнера , что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.</p>
-            <a href="#" class="read-more"> 
-            <img class="ikon-read-more" src="/img/icon.svg" /> Читать далее</a>
+            <a href="#" class="read-more about-service__read-more"> 
+            <img class="arrow read-more__arrow" src="/img/icon.svg" /> Читать далее</a>
         </div>
             
 
-            <div class="photo_banner">
-              <img class="photo_banner-img" src="/img/banner.png">
+            <div class="picture">
+              <img class="banner picture__banner" src="/img/banner.png">
             </div>
         </div>
-        </div>
-      </div>
+        
+      
     </main>
   </body>
 </html>

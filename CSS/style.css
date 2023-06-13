@@ -1,341 +1,357 @@
 
-
 *{
-margin: 0;
-padding: 0;
-font-family: TTLakesCompressed-Black;
-}
-
-html{
-    box-sizing:border-box;
-}
-
-*,*::after*::before{
-    box-sizing:inherit;
-}
-
-body{
-    min-width: 320px;
-    background-color: #F8F8F8 
-}
-
-
-/* 1 часть Лого и виджеты */
-.container{
-    padding: 0 16px;
-}
-
-.header{
-    background-color: white;
-    border-bottom: 1px solid #D9FFF5 ;
-}
-
-
-
- .header__inner{
-    min-height: 87px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-
-
-.heading{
-    min-height: 40px;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0 20px;
- }
-
- .line_burger ,.phone__ikon, .chat__ikon, .profile__ikon , .text_large_screen, .big_screen {
-    display: none;
- }
- 
-
- /* 2 часть Заголовок и скролл */
-main{
-    background-color: #F8F8F8 ;
-}
-
-h1{
-    font-size: 35px;
-    width: 350px;
-    padding-left: 10px;
-    letter-spacing: -1px;
-}
-
-.main-img{
-    height: 45px;
-}
-
-.nav-scroller{
-    display: flex;
-    justify-content: center;
-}
-
-.gradient{
-    position: absolute;
-     top: 10;
-    right: 0;
-    height: 45px;
-    width: 20px;
-    background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
-    
-    
-}
-
-.nav-scroller__item{
-    display: inline-block; 
-    height: 20px;
-    color: #7E7E82; 
-    font: 120% "trebuchet ms", sans-serif;
-    font-size: 16px;;
-    padding: 10px 15px 10px 15px;
-    text-decoration: none;
-}
-
-.nav-scroller__item:active{
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    background-color: white;
-    
-}
-
-.nav-scroller__items{
-    padding: 10px 10px;
-    display: flex;
-    justify-content: start;
-    align-items: stretch;
-    overflow-x: auto;
-    list-style-type: none;
-    white-space: nowrap;
-    padding-left: 16px;
-    z-index: 9;
-}
-
-
-.nav-scroller__items::-webkit-scrollbar {
-    display: none;
-  }
-
-  ul.nav-scroller__items li.selected a {
-    color: #7E7E82;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    background-color: white;
-  }
-  
-  ul.nav-scroller__items li a:hover{
-    color: #7E7E82;
-  }
-
-/* 3 часть контент текст */
-
-.text-content__first-paragraph{
-    font-size: 16px;
-    color: #1B1C21;
-    height: 90px;
-    padding-top: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 10px;;
-    letter-spacing: 0.20000000298023224px;
-    line-height: 20px;
-    text-align: left;
-}
-
-.text-content__second-paragraph {
-    display: none;
-}
-
-
-
-.read-more {
-    display: inline-block;
-    justify-content: letter-spacing;
-    color:  #1B1C21;
-    text-decoration: none;
-    font-size: 20px;
-   margin-left: 20px;;
-    font-weight: bold;
-    background-color: #F8F8F8 ;
-    margin-top: 20px;
-    border-radius: 5px;
-  }
-  
-  .read-more:hover {
-    background-color: #7E7E82;
-  }
-
-.ikon-read-more{
-    height: 13px;
-    padding-left: 10px ;
-    padding-right: 20px;
-    padding-top: 5px;
-    
-}
-
-.photo_banner{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.photo_banner-img{
-    width: 400px;
-}
-
-
-
-/* CSS 768px */
-
-@media (min-width : 768px) and (max-width: 1119px) {
-    
-    .logo {
-        padding-right: 250px;
+    margin: 0;
+    padding: 0;
+    font-family: TTLakesCompressed-Black;
     }
-
-
-    .line_burger ,.phone__ikon, .chat__ikon, .profile__ikon  {
-        display:block;
-     }
     
-
-    .heading {
-        display: flex;
-        justify-content: left;
+    html{
+        box-sizing:border-box;
     }
-
-    .about_servise{
+    
+    *,*::after*::before{
+        box-sizing:inherit;
+    }
+    
+    body{
+        min-width: 320px;
+        background-color: #F8F8F8 ;
+    }
+    
+    
+    /* 1 часть Лого и виджеты */
+   
+    
+    .header{
+        background-color: white;
+        border-bottom: 1px solid #D9FFF5 ;
+        min-height: 87px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 16px;
+    }
+    
+    
+    
+     /* .container{
+        min-height: 87px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+     } */
+    
+    
+    .heading{
+        min-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 20px;
+     }
+    
+     .header__line--mod--one ,.phone, .chat, .profile , .text_large_screen, .el1-link--mod {
+        display: none;
+     }
+     
+    
+     /* 2 часть Заголовок и скролл */
+    .main{
+        background-color: #F8F8F8 ;
+    }
+    
+    .content-name{
+        font-size: 35px;
+        width: 350px;
+        padding-left: 10px;
+        letter-spacing: -1px;
+    }
+    
+    .img{
+        height: 45px;
+    }
+    
+    .scroller{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gradient{
+        position: absolute;
+         top: 10;
+        right: 0;
+        height: 45px;
+        width: 20px;
+        background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
+        
         
     }
+    
+    .link{
+        display: inline-block; 
+        height: 20px;
+        color: #7E7E82; 
+        font: 120% "trebuchet ms", sans-serif;
+        font-size: 16px;;
+        padding: 10px 15px 10px 15px;
+        text-decoration: none;
+    }
+    .link:active{
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background-color: white;
+        
+    }
+    .scroller__items{
+        padding: 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: stretch;
+        overflow-x: auto;
+        list-style-type: none;
+        white-space: nowrap;
+        padding-left: 16px;
+        z-index: 9;
+    }
+    
 
-    .text-content__second-paragraph{
-        display: block;
-        height: 35px;
-        overflow: hidden;
-        padding: 10px 16px 0px 16px;
+    .scroller__items::-webkit-scrollbar {
+        display: none;
+      }
+    
+    
+      
+      ul.scroller__items li.selected a {
+        color: #7E7E82;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background-color: white;
+      }
+      
+      ul.scroller__items li a:hover{
+        color: #7E7E82;
+      }
+
+      .el1-link--mod{
+        display: none;
+     }
+    /* 3 часть контент текст */
+    
+    .first-paragraph{
         font-size: 16px;
+        color: #1B1C21;
+        height: 90px;
+        padding-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        letter-spacing: 0.20000000298023224px;
+        line-height: 20px;
+        text-align: left;
     }
+    
+    .second-paragraph, .text-settings, .text-search {
+        display: none;
+    }
+    
+    
+    
+    .read-more {
+        color:  #1B1C21;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #F8F8F8 ;
+        border-radius: 5px;
+      }
+      
+      .read-more:hover {
+        background-color: #F8F8F8;
+      }
+    
+    .about-service__read-more{
+        display: inline-block;
+        justify-content: letter-spacing;
+        height: 25px;
+        padding-left: 10px ;
+        padding-right: 20px;
+        padding-top: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .read-more__arrow{
+        height: 15px;
+        padding-right: 10px;
+    }
+    
+    .picture{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    .banner{
+        width: 400px;
+    }
+    
+    
+    
+    /* CSS 768px */
+    
+    @media (min-width : 768px) and (max-width: 1119px) {
+    
+        .header__logo {
+            padding-right: 250px;
+        }
+    
+    
+        .line ,.phone, .chat, .profile  {
+            display:block;
+         }
         
-
-    .text-content__first-paragraph{
-         padding-top: 0;
+    
+        .main__heading {
+            display: flex;
+            justify-content: left;
+        }
+    
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+    
+        .about-service__second-paragraph{
+            display: block;
+            height: 35px;
+            overflow: hidden;
+            padding: 10px 16px 0px 16px;
+            font-size: 16px;
+        }
+            
+    
+        .about-service__first-paragraph{
+             padding-top: 0;
+            }
+    
+        .picture__banner{
+            border-radius:5px;
+            padding-bottom: 50px;
+        }
+    
+    }
+    
+    /* CSS 1120px */
+    @media (min-width : 1120px) and (max-width: 1440px) {
+        .menu, .line, .logo {
+            display: none;
         }
 
-    .photo_banner-img{
+        
+    
+        .header{
+            float: right;
+            display: flex;
+            width: 420px;
+            align-items: center;
+            padding: 40px 0 0px;
+            height: 60px;
+            background-color: #F8F8F8 
+        }
+        .el1-link{
+            display: block;
+        }
+    
+        .main__heading{
+            float: left;
+            display: flex;
+            width: 700px;
+            padding: 60px 0 0px;
+            height: 60px;
+        }
+
+       
+    
+        .content-name{
+            width: 650px;
+        }
+    
+        .header__settings{
+            padding: 10px;
+          
+        }
+        
+    
+        .text-settings, .text-search{
+            display: block;
+            align-items: center;
+            padding-top: 10px;
+            float: left;
+            height: 24px;
+            font-size: 18px;
+            padding-right: 20px;
+    
+        }
+        
+    
+        .main__scroller {
+            display: inline-block;
+        }
+    
+        .el3{
+            display: none;
+        }
+    
+      .el5{
+        display: block;
+      }
+    
+      .link{
+        padding: 10px 20px 10px 20px;
+      }
+    
+      .scroller__items{
+        flex-wrap: wrap;
+      }
+    
+      .content{
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        
+    }
+    .first-paragraph    {
+        display: block;
+        height: 85px;
+        font-size: 20px;
+        padding: 10px 16px 0px 16px;
+        line-height: 22px;
+   }
+    .second-paragraph{
+        display: block;
+        height: 110px;
+        font-size: 20px;
+        padding: 10px 16px 0px 16px;
+            
+    }
+    
+    .picture{
+        padding-top: 0px;
+    }
+    
+    .picture__banner{
         border-radius:5px;
         padding-bottom: 50px;
+        padding-top: 0px;
+        height: 383px;
+        width: 531px;
     }
-
-}
-
-/* CSS 1120px */
-@media (min-width : 1120px) and (max-width: 1440px) {
-    .menu__ikon, .line_burger, .logo, .line_ikon_left {
-        display: none;
-    }
-
-    .container{
-        float: right;
-        display: flex;
-        width: 420px;
-        align-items: center;
-        padding: 40px 0 0px;
-        height: 60px;
-    }
-
-    .heading{
-        float: left;
-        display: flex;
-        width: 700px;
-        padding: 40px 0 0px;
-        height: 60px;
-    }
-
-    h1{
-        width: 650px;
-    }
-
-    .settings_ikon{
-        padding: 10px;
-      
-    }
-    .header__inner{
-       
-    }
-
-    .text_large_screen{
-        display: block;
-        align-items: center;
-        padding-top: 10px;
-        float: left;
-        height: 24px;
-        font-size: 18px;
-
-    }
-    .text_large_screen{
-        padding-right: 20px;
-    }
-
-    .nav-scroller {
-        display: inline-block;
-    }
-
-    .small_screen{
-        display: none;
-    }
-
-  .big_screen{
-    display: block;
-  }
-
-  .nav-scroller__item{
-    padding: 10px 20px 10px 20px;
-  }
-
-  .nav-scroller__items{
-    flex-wrap: wrap;
-  }
-
-  .about_servise{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    
-}
-
-.text-content__second-paragraph{
-    display: block;
-    height: 50px;
-    font-size: 20px;
-    padding: 10px 16px 0px 16px;
+    .about-service__read-more{
         
-}
-
-.photo_banner{
-    padding-top: 0px;
-}
-
-.photo_banner-img{
-    border-radius:5px;
-    padding-bottom: 50px;
-    padding-top: 0px;
-    height: 383px;
-    width: 531px;
-}
-.read-more{
-    display: block;
-    padding-top: 100px;
+        padding-top: 20px;
+        }
+    
+        
     }
-
-.text-content__first-paragraph    {
-     padding-top: 20px;
-    width: 500px;
-    font-size: 20px;
-}
-}
