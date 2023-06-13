@@ -1,1 +1,3 @@
 AddDefaultCharset cp1251
+
+SetEnvIf X-Forwarded-Proto https HTTPS=on
