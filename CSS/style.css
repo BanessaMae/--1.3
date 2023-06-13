@@ -56,14 +56,13 @@ body{
 main{
     background-color: #F8F8F8 ;
 }
+
 h1{
     font-size: 35px;
     width: 350px;
     padding-left: 10px;
     letter-spacing: -1px;
 }
-
-
 
 .main-img{
     height: 45px;
@@ -133,7 +132,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
 
 /* 3 часть контент текст */
 
-.text{
+.text-content__first-paragraph{
     font-size: 16px;
     color: #1B1C21;
     height: 90px;
@@ -146,25 +145,23 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
     text-align: left;
 }
 
-#more {
+.text-content__second-paragraph {
     display: none;
 }
 
 
-.read-more-inline{
 
-
-}
 .read-more {
-    display: flex;
+    display: inline-block;
     justify-content: letter-spacing;
     color:  #1B1C21;
     text-decoration: none;
     font-size: 20px;
-    padding-left: 20px;;
+   margin-left: 20px;;
     font-weight: bold;
     background-color: #F8F8F8 ;
-    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
   }
   
   .read-more:hover {
@@ -206,8 +203,8 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
     
 
     .heading {
-    display: flex;
-    justify-content: left;
+        display: flex;
+        justify-content: left;
     }
 
     .about_servise{
@@ -216,21 +213,18 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
         align-items: center;
         
     }
-    #more{
+
+    .text-content__second-paragraph{
         display: block;
-        width: 301px;
-        height: 40px;
+        height: 35px;
         overflow: hidden;
-        padding-top: 20px;
-        margin: 0;
+        padding: 10px 16px 0px 16px;
+        font-size: 16px;
     }
         
-    .read-more-inline{
-        padding-top: 40px;
-        }
 
-    .text{
-         padding-top: 0px;
+    .text-content__first-paragraph{
+         padding-top: 0;
         }
 
     .photo_banner-img{
@@ -315,13 +309,12 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
     
 }
 
-  #more{
+.text-content__second-paragraph{
     display: block;
-    width: 500px;
-    height: 200px;
-    overflow: hidden;
-    padding-top: 20px;
-    margin: 0;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 16px 0px 16px;
+        
 }
 
 .photo_banner{
@@ -336,10 +329,11 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.93
     width: 531px;
 }
 .read-more{
-    padding-top: 120px;
+    display: block;
+    padding-top: 100px;
     }
 
-.text{
+.text-content__first-paragraph    {
      padding-top: 20px;
     width: 500px;
     font-size: 20px;
