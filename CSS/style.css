@@ -61,7 +61,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/navbar.svg) ;
+        background-image: url(/img/ikon/navbar.svg) ;
         background-repeat: no-repeat;
         background-position:center;
      }
@@ -89,7 +89,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/phone.svg) ;
+        background-image: url(/img/ikon/phone.svg) ;
         background-repeat: no-repeat;
         background-position:center;
      }
@@ -108,7 +108,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/message1.svg) ;
+        background-image: url(/img/ikon/message1.svg) ;
         background-repeat: no-repeat;
         background-position:center;
      }
@@ -126,7 +126,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/office.svg) ;
+        background-image: url(/img/ikon/office.svg) ;
         background-repeat: no-repeat;
         background-position:center;
      }
@@ -146,7 +146,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/settings.svg) ;
+        background-image: url(/img/ikon/settings.svg) ;
         background-repeat: no-repeat;
         background-position:center;
     }
@@ -159,7 +159,7 @@
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(img/ikon/search.svg) ;
+        background-image: url(/img/ikon/search.svg) ;
         background-repeat: no-repeat;
         background-position:center;
     }
@@ -463,6 +463,12 @@
         .line{
             display: none;
         }
+        .text__settings{
+            display: block;
+        }
+        .text__search{
+            display: block;
+        }
         
         .el1-link{
             display: block;
@@ -496,43 +502,6 @@
         display: flex;
         justify-content: center;
         align-items: top;
-<<<<<<< Updated upstream
-        
-    }
-    .first-paragraph    {
-        display: block;
-        height: 85px;
-        font-size: 20px;
-        padding: 10px 16px 0px 16px;
-        line-height: 22px;
-   }
-    .second-paragraph{
-        display: block;
-        height: 110px;
-        font-size: 20px;
-        padding: 10px 16px 0px 16px;
-            
-    }
-    
-    .picture{
-        padding-top: 0px;
-    }
-    
-    .picture__banner{
-        border-radius:5px;
-        padding-bottom: 50px;
-        padding-top: 0px;
-        height: 25rem;
-        width: 45rem;
-    }
-    .about-service__read-more{
-        
-        padding-top: 20px;
-        }
-    
-        
-    }
-=======
         }
         .picture__banner{
             border-radius:5px;
@@ -544,4 +513,3 @@
 }
 
     
->>>>>>> Stashed changes
