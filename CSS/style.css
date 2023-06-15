@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: TTLakesCompressed-Black;
+    font-family: 'Playfair Display', serif;
     }
     
     html{
@@ -16,6 +16,8 @@
     body{
         min-width: 320px;
         background-color: #F8F8F8 ;
+        max-width: 1120px;
+        margin: auto;
     }
     
     
@@ -31,40 +33,175 @@
         align-items: center;
         padding: 0 16px;
     }
+
+    @media (min-width : 768px) and (max-width: 1119px) {
+        .header{
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .header{
+            float: right;
+            display: flex;
+            width: 420px;
+            align-items: center;
+            padding: 30px 0 0px;
+            height: 60px;
+            background-color: #F8F8F8;
+            border-bottom: none;
+        }
+    }
+     
+     /* Переделанный хедер */
+
+     
+     .navbar{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/navbar.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+     }
+     
+
+     @media (min-width : 1120px) and (max-width: 4000px) {
+        .navbar{
+            display: none;
+         }
+    }
+
+    .header__line--disappear{
+           display: none;
+        } 
+     @media (min-width : 768px) and (max-width: 1119px) {
+             .header__line--disappear{
+                display:block;
+             }
+            }
+        
+     
+
+     .phone{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/phone.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+     }
+     .phone--disappear{
+        display: none;
+     }
+
+     @media (min-width : 768px) and (max-width: 1119px) {
+        .phone--disappear {
+            display:block;
+         }
+       }
+
+     .message{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/message1.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+     }
+     .message--disappear{
+        display: none;
+     }
+     @media (min-width : 768px) and (max-width: 1119px) {
+        .message--disappear{
+            display:block;
+         }
+       }
+
+     .office{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/office.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+     }
+     
+     .office--disappear{
+        display: none;
+     }
+
+     @media (min-width : 768px) and (max-width: 1119px) {
+        .office--disappear{
+            display:block;
+         }
+       }
+
+    .settings{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/settings.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    .text__settings{
+        display: none;
+    }
+
+    .search{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(/img/ikon/search.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+
+    .text__search{
+        display: none;
+    }
+
     
-    
-    
-     /* .container{
-        min-height: 87px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 16px;
-     } */
-    
-    
-    .heading{
+     /* 2 часть Заголовок и скролл */
+     .heading{
         min-height: 40px;
         display: flex;
         justify-content: space-between;
-        padding: 40px 0 20px;
+        padding: 24px 0 20px;
      }
+     @media (min-width : 1120px) and (max-width: 4000px) {
+        .heading{
+            padding: 40px 0 20px;
+         }
+    }
     
-     .header__line--mod--one ,.phone, .chat, .profile , .text_large_screen, .el1-link--mod {
-        display: none;
-     }
-     
-    
-     /* 2 часть Заголовок и скролл */
-    .main{
+     .main{
         background-color: #F8F8F8 ;
     }
     
     .content-name{
-        font-size: 35px;
+        font-size:28px;
         width: 350px;
-        padding-left: 10px;
+        padding-left: 15px;
         letter-spacing: -1px;
+    }
+    @media (min-width : 768px) and (max-width: 1119px) {
+        .content-name{
+            padding-left: 20px;
+        }
+       }
+
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .content-name{
+            width: 650px;
+        }
     }
     
     .img{
@@ -74,28 +211,34 @@
     .scroller{
         display: flex;
         justify-content: center;
+        overflow-x: auto;
     }
     
     .gradient{
         position: absolute;
-         top: 10;
+        top: 10;
         right: 0;
         height: 45px;
         width: 20px;
         background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
         
         
     }
-    
+
     .link{
         display: inline-block; 
         height: 20px;
         color: #7E7E82; 
-        font: 120% "trebuchet ms", sans-serif;
+        font: 120%  sans-serif;
         font-size: 16px;;
         padding: 10px 15px 10px 15px;
         text-decoration: none;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .link{
+        padding: 10px 20px 10px 20px;
+      }
     }
     .link:active{
         border: 2px solid #B8FFEC;
@@ -113,6 +256,11 @@
         white-space: nowrap;
         padding-left: 16px;
         z-index: 9;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {   
+      .scroller__items{
+        flex-wrap: wrap;
+      }
     }
     
 
@@ -138,155 +286,43 @@
      }
     /* 3 часть контент текст */
     
+
+
+
     .first-paragraph{
         font-size: 16px;
         color: #1B1C21;
-        height: 90px;
-        padding-top: 20px;
+        height: 100px;
+        padding-top: 5px;
         padding-left: 16px;
         padding-right: 16px;
-        padding-bottom: 10px;
-        letter-spacing: 0.20000000298023224px;
-        line-height: 20px;
+        padding-bottom: 20px;
         text-align: left;
     }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .first-paragraph    {
+            display: block;
+            font-size: 17px;
+            height: 65px;  
+    }
+}
     
-    .second-paragraph, .text-settings, .text-search {
+    .second-paragraph {
         display: none;
     }
-    
-    
-    
-    .read-more {
-        color:  #1B1C21;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-        background-color: #F8F8F8 ;
-        border-radius: 5px;
-      }
-      
-      .read-more:hover {
-        background-color: #F8F8F8;
-      }
-    
-    .about-service__read-more{
-        display: inline-block;
-        justify-content: letter-spacing;
-        height: 25px;
-        padding-left: 10px ;
-        padding-right: 20px;
-        padding-top: 5px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    .read-more__arrow{
-        height: 15px;
-        padding-right: 10px;
-    }
-    
-    .picture{
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-    }
-    
-    .banner{
-        width: 400px;
-    }
-    
-    
-    
-    /* CSS 768px */
-    
-    @media (min-width : 768px) and (max-width: 1119px) {
-    
-        .header__logo {
-            padding-right: 250px;
-        }
-    
-    
-        .line ,.phone, .chat, .profile  {
-            display:block;
-         }
-        
-    
-        .main__heading {
-            display: flex;
-            justify-content: left;
-        }
-    
-        .content{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-        }
-    
-        .about-service__second-paragraph{
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .second-paragraph{
             display: block;
-            height: 35px;
-            overflow: hidden;
-            padding: 10px 16px 0px 16px;
-            font-size: 16px;
+            height: 110px;
+            font-size: 17px;
+            padding: 0px 16px 0px 16px ;  
         }
-            
-    
-        .about-service__first-paragraph{
-             padding-top: 0;
-            }
-    
-        .picture__banner{
-            border-radius:5px;
-            padding-bottom: 50px;
-        }
-    
     }
-    
-    /* CSS 1120px */
-    @media (min-width : 1120px) and (max-width: 1900px) {
-        .menu, .line, .logo {
-            display: none;
-        }
-
-        
-    
-        .header{
-            float: right;
-            display: flex;
-            width: 420px;
-            align-items: center;
-            padding: 40px 0 0px;
-            height: 60px;
-            background-color: #F8F8F8;
-            border-bottom: none;
-
-        }
-        .el1-link{
-            display: block;
-        }
-    
-        .main__heading{
-            float: left;
-            display: flex;
-            width: 700px;
-            padding: 60px 0 0px;
-            height: 60px;
-        }
-
-       
-    
-        .content-name{
-            width: 650px;
-        }
-    
-        .header__settings{
-            padding: 10px;
-          
-        }
-        
-    
-        .text-settings, .text-search{
+    .text-search {
+        display: none;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+      .text-search{
             display: block;
             align-items: center;
             padding-top: 10px;
@@ -294,10 +330,156 @@
             height: 24px;
             font-size: 18px;
             padding-right: 20px;
+        }
+    }
+    .text-settings {
+        display: none;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+       .text-settings{
+            display: block;
+            align-items: center;
+            padding-top: 10px;
+            float: left;
+            height: 24px;
+            font-size: 18px;
+            padding-right: 20px;
+        }
+    }
+
+
     
+    
+    .read-more {
+        color:  #1B1C21;
+        font-size: 18px;
+        font-weight: bold;
+        background: #F8F8F8 ;
+        display: block;
+        border: 0;
+        cursor: pointer;
+        padding-top: 30px;
+        padding-left: 36px;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .read-more{
+            padding-top: 0;
+
+        }
+    }
+        
+    .arrow{
+        height: 12px;
+        padding-right: 20px;
+    }
+    
+    
+    .picture{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .picture{
+            padding-top: 0px;
+        }
+    }
+    
+    .banner{
+        width: 25rem;
+    }
+    
+    @media (min-width : 768px) and (max-width: 1119px) {
+    .banner{
+        width: 25rem;
+    }
+}
+    /* Всплывающее меню */
+    
+/* 
+    input[type=checkbox]{
+        display: none;
+    }
+
+
+    .navbar{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    height: 80rem;
+    background-color:#FFFFFF;
+    }
+
+
+    input[type=checkbox]:checked ~ .navbar {
+        display: block;
+    }
+    
+    .list__link{
+        text-decoration: none;
+        list-style-type:  none;
+    
+    } */
+    
+    
+
+    /* CSS 768px Те теги которые не стилизовались ранее*/
+    
+    @media (min-width : 768px) and (max-width: 1119px) {
+    
+        .logo {
+            padding-right: 250px;
         }
         
+        .main__heading {
+            display: flex;
+            justify-content: left;
+        }
+         .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about-service{
+            padding: none;
+        }
     
+        .about-service__second-paragraph{
+            display: block;
+            height: 35px;
+            overflow: hidden;
+            padding: 10px 16px 5px 16px;
+            font-size: 16px;
+        }
+            
+    }
+    
+    /* CSS 1120px Те теги которые не стилизовались ранее*/
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .logo {
+            display: none;
+        }
+        
+        .line{
+            display: none;
+        }
+        
+        .el1-link{
+            display: block;
+        }
+        
+        .header__settings{
+            padding: 10px;
+          
+        }
+        
+        .main__heading{
+            float: left;
+            display: flex;
+            width: 700px;
+            padding: 60px 0 0px;
+            height: 60px;
+        }
         .main__scroller {
             display: inline-block;
         }
@@ -306,22 +488,15 @@
             display: none;
         }
     
-      .el5{
+       .el5{
         display: block;
-      }
-    
-      .link{
-        padding: 10px 20px 10px 20px;
-      }
-    
-      .scroller__items{
-        flex-wrap: wrap;
-      }
-    
-      .content{
+       }
+       
+       .content{
         display: flex;
         justify-content: center;
         align-items: top;
+<<<<<<< Updated upstream
         
     }
     .first-paragraph    {
@@ -357,3 +532,16 @@
     
         
     }
+=======
+        }
+        .picture__banner{
+            border-radius:5px;
+            padding-bottom: 50px;
+            padding-top: 0px;
+            height: 20rem;
+            width: 30rem;
+        }
+}
+
+    
+>>>>>>> Stashed changes
