@@ -13,8 +13,46 @@
   </head>
   <body>
     <header class="header">
-     
-      <nav class="navbar"></nav>
+      
+<!-- Первый навбар нужно поменять чтобы меню всплывало вне зависимости -->
+      
+      <nav class="navbar" >
+        <input class="checkbox" type="checkbox" id="checkbox_toggle">
+        <div class="side__panel side-panel__navbar">
+          <nav class="side_panel__header">
+          <label class="side-button-exit" for="checkbox_toggle">
+            <nav class="side-panel__exit" for="checkbox_toggle"></nav>
+          </label> 
+            <img class="logo side-panel__logo" src="img/logo.svg" alt="logo" />
+            <nav class="search side-panel__search"></nav>
+          </nav>
+          <ul class="list__panel list__panel--scroll">
+            <li class="li__panel"> <a class="list__link" href="#">Ремонт техники</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Услуги и сервисы</a> </li>
+            <li class="li__panel"> <a class="list__link" href="#">Корпоративным клиентам</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Продавцам техники</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Производителям</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Наши сервисные центры</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Партнерам</a></li>
+            <li class="li__panel"> <a class="list__link" href="#">Контакты</a></li>
+          </ul>
+
+          <footer class="nav__footer">
+            <a class="nav__footer__link" href="#"><nav class="phone side-panel__phone"></nav></a>
+            <a class="nav__footer__link" href="#"><nav class="message side-panel__message"></nav></a>
+            <a class="nav__footer__link" href="#"><nav class="office side-panel__office"></nav></a>
+            <h3 class="mail"><a class="nav__footer__link" href="#">mail@cps.com</a></h3>
+            <h3 class="number"><a class="nav__footer__link" href="#">8 800 890 8900</a></h3>
+            <a class="language" href="#">RU</a>
+            <a class="language" href="#">EN</a>
+            <a class="language" href="#">CH</a>
+          </footer>
+        </div>
+      </nav> 
+    
+
+
+
       <img class="line header__line--disappear" src="img/divider.svg" alt="line"/>
       <img class="logo" src="img/logo.svg" alt="logo" />
       <nav class="phone phone--disappear"></nav>
@@ -26,25 +64,6 @@
       <h3 class="text__search">Статус ремонта</h3>
       <nav class="search"></nav>
 
-      <!-- <input type="checkbox" id="checkbox_toggle">
-            <label for="checkbox_toggle">
-              <img class="checked" src="/img/burger.svg" />
-            </label>
-            <a href="#" class="menu__link">  -->
-
-      <!-- <nav class="navbar">
-      
-                <article> <a class="list__link" href="#">Ремонт техники</a></article>
-                <article> <a class="list__link" href="#">Услуги и сервисы</a> </article>
-                <article> <a class="list__link" href="#">Корпоративным клиентам</a></article>
-                <article> <a class="list__link" href="#">Продавцам техники</a></article>
-                <article> <a class="list__link" href="#">Производителям</a></article>
-                <article> <a class="list__link" href="#">Наши сервисные центры</a></article>
-                <article> <a class="list__link" href="#">Партнерам</a></article>
-                <article> <a class="list__link" href="#">Контакты</a></article>
-            
-              </nav> 
-            </a>-->
     </header>
 
     <main class="main">

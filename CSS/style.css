@@ -163,6 +163,11 @@
         background-repeat: no-repeat;
         background-position:center;
     }
+    @media (min-width : 1120px) and (max-width: 4000px) {
+        .search{
+          
+        }
+    }
 
     .text__search{
         display: none;
@@ -284,6 +289,9 @@
       .el1-link--mod{
         display: none;
      }
+
+
+
     /* 3 часть контент текст */
     
 
@@ -394,34 +402,206 @@
         width: 25rem;
     }
 }
+
+
+
     /* Всплывающее меню */
+    /* шапка */
     
-/* 
-    input[type=checkbox]{
+    #checkbox_toggle:checked + .side-panel__navbar{
+        display: none;
+    }
+    #checkbox_toggle:checked + .side-panel__navbar{
+        display: block;
+    }
+    #checkbox_toggle:checked + .side-panel__navbar {
+        left: 0;
+    }
+
+    .checkbox{
+        opacity:0;
+        height: 40px;
+        width: 40px;
+    }
+
+    .side-panel__navbar{
         display: none;
     }
 
-
-    .navbar{
-    display: none;
-    text-decoration: none;
-    position: absolute;
-    height: 80rem;
-    background-color:#FFFFFF;
+    .side-panel__navbar {
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: -360px;
+        background: white;
+        transition: all 0.5s;   
+        width: 320px;
+        min-height: 100rem;
+        box-shadow: 30px 0 30px rgba(0,0,0,0.4);
+        color: #FFF; 
     }
 
-
-    input[type=checkbox]:checked ~ .navbar {
-        display: block;
+    .side_panel__header{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items:center;
+        
     }
+
     
+    .side-button-exit {
+        font-size: 30px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        /* transform: rotate(45deg); */
+        color: #BFE2FF;    
+        transition: all 280ms ease-in-out;    
+    }
+
+    .side-button-exit:hover {
+        transform: rotate(90deg) scale(1.1);    
+        color: #b42828;
+    }
+
+    .side-panel__exit{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(exit.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+
+    @media (min-width : 768px) and (max-width: 1119px) {
+        .side-button-exit+.side-panel__logo{
+        padding-right: 60px;
+    }
+    }
+
+    .side-panel__search{
+        height: 40px;
+        width: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url(search_nav.svg) ;
+        background-repeat: no-repeat;
+        background-position:center;
+        cursor: pointer;
+        transition: all 280ms ease-in-out;  
+    }
+    .side-panel__search:hover {
+        transform: rotate(10deg) scale(1.1);    
+        color: #b42828;
+    }
+
+
+    /* список */
+    .list__panel {
+        font-size: 16px;
+        z-index: 2000;
+        list-style-type: none;
+        overflow-y:auto;
+        padding-bottom: 10vh;
+    }
+
+
+    .list__panel--scroll::-webkit-scrollbar{
+        display: none;
+    }
+
+    .li__panel{
+        padding-bottom: 20px;
+    }
+
+    .li__panel:hover{
+        background-image:url(highlight.svg);
+        background-repeat: no-repeat;
+        background-position:left;
+    }
+
     .list__link{
+        display: block;
         text-decoration: none;
-        list-style-type:  none;
+        color:#1B1C21;
+        font-weight:600;
+        padding-top: 10px;
+        padding-left: 30px;
+      
+    }
+
     
-    } */
+    .list__link:hover{
+        color: #7E7E82;
+        cursor: pointer;
+        font-weight:normal;
+        background-image:url(highlight.svg) ;
+        background-repeat: no-repeat;
+        background-position:left;
+    }
+
+    /* подвал сайдбара */
+    .nav__footer{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        padding: 20px;
+        padding-right:90px;
+        height: auto;
+        vertical-align:bottom; 
+    }
+   
+    .side-panel__phone{
+        
+    }
+    .mail{
+        color:#1B1C21;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 20px;
+        font-size: 14px;
+       
+    }
+    .number{
+        color:#1B1C21;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding-top :10px;
+        font-size: 30px;
+        font-weight: bold;
+       
+    }
+    .nav__footer__link{
+        cursor: pointer;
+        text-decoration: none;
+        color:#1B1C21;
+        transition: all 180ms ease-in-out;    
+    }
+
+    .nav__footer__link:hover {
+        transform: rotate(0deg) scale(1.2);    
+        color: pink;
+    }
     
+    .language{
+        text-decoration: none;
+        color:#1B1C21;
+        font-weight: 600;
+        font-size: 18px;
+        padding-top :40px;
+        cursor: pointer;
+    }
+
     
+
+
+     
+
+
 
     /* CSS 768px Те теги которые не стилизовались ранее*/
     
