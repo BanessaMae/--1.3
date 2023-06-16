@@ -444,7 +444,8 @@
     .side_panel__header{
         display: flex;
         justify-content: space-around;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         align-items:center;
         
     }
@@ -476,11 +477,11 @@
         background-position:center;
     }
 
-    @media (min-width : 768px) and (max-width: 1119px) {
-        .side-button-exit+.side-panel__logo{
+    .side-panel__logo{
         padding-right: 60px;
     }
-    }
+
+    
 
     .side-panel__search{
         height: 40px;
