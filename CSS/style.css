@@ -64,7 +64,9 @@
         background-image: url(navbar.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
      }
+     
      
 
      @media (min-width : 1120px) and (max-width: 4000px) {
@@ -92,6 +94,7 @@
         background-image: url(phone.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
      }
      .phone--disappear{
         display: none;
@@ -111,6 +114,7 @@
         background-image: url(message1.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
      }
      .message--disappear{
         display: none;
@@ -129,6 +133,7 @@
         background-image: url(office.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
      }
      
      .office--disappear{
@@ -149,6 +154,7 @@
         background-image: url(settings.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
     }
     .text__settings{
         display: none;
@@ -162,6 +168,7 @@
         background-image: url(search.svg) ;
         background-repeat: no-repeat;
         background-position:center;
+        cursor: pointer;
     }
     @media (min-width : 1120px) and (max-width: 4000px) {
         .search{
@@ -428,6 +435,11 @@
         opacity:0;
         height: 40px;
         width: 40px;
+        cursor: pointer;
+    }
+
+    .checkbox:hover{
+        cursor: pointer;
     }
 
     .side-panel__navbar{
