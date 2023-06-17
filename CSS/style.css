@@ -235,10 +235,10 @@
         display: inline-block; 
         height: 20px;
         color: #7E7E82; 
-        font: 120%  sans-serif;
-        font-size: 16px;;
+        font-size: 17px;
         padding: 10px 15px 10px 15px;
         text-decoration: none;
+       
     }
     @media (min-width : 1120px) and (max-width: 4000px) {
         .link{
@@ -505,7 +505,7 @@
 
 
     /* список */
-
+    
     .list__panel {
         font-size: 16px;
         z-index: 2000;
