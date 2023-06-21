@@ -528,35 +528,35 @@
     display: none;
    }
     /* показывает копию блока с свипером */
-   @media (min-width : 768px) and (max-width: 1609px) {
+   @media (min-width : 768px) and (max-width: 6009px) {
     .brands__container{
         display: block;
        }
     }
      /* Убираем из виду свипер блок, при экране более 768 */
-    @media (min-width : 768px) and (max-width: 2000px) {
+    @media (min-width : 768px) and (max-width: 6000px) {
         .image-slider{
             display: none;
            }
         }
 
     .brands__wrapper{
-        display: grid;
-        grid-template-columns: 224px 224px 224px;
+        display: flex;
+        flex-wrap: wrap;
         padding-left: 24px;
         padding-right: 24px;
-        grid-column-gap: 24px;
+        grid-column-gap: 18px;
         grid-row-gap: 16px;
         margin-top: 24px;
+        float: right;
     }
     
-    @media (min-width : 1120px) and (max-width: 6000px) {
+    /* @media (min-width : 1120px) and (max-width: 6000px) {
         .brands__wrapper{
             grid-template-columns: 240px 240px 240px 240px;
             grid-column-gap: 32px;
-            
         }
-        }
+    } */
 
    
 
@@ -621,36 +621,58 @@
           }
       }
 
-
       
-      #more{
-        display: none;
-      }
-
-      
-
-    .more{
-            display: grid;
-            grid-template-columns: 224px 224px 224px;
-            padding-right: 24px;
-            grid-column-gap: 24px;
+      .brands__wrapper , .more{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            grid-column-gap: 18px;
             grid-row-gap: 16px;
         }
 
-        @media (min-width : 1120px) and (max-width: 6000px) {
+        /* @media (min-width : 1120px) and (max-width: 6000px) {
             .more{
-                display: grid;
+                display: flex;
+                flex-wrap: nowrap;
                 grid-template-columns: 224px 224px 224px 224px;
                 grid-template-rows: 72px 72px 72px;
                 padding-right: 24px;
                 grid-column-gap: 32px;
                 grid-row-gap: 16px;
             }
-          }
+          } */
+
+    .hidden{
+        display: none;
+    }
+
+    
+    @media (min-width : 1120px) and (max-width: 6000px) {
+        .acer{
+            display: flex;
+        }
+      }
+
+    
+    @media (min-width : 1120px) and (max-width: 6000px) {
+        .sony{
+            display: flex;
+        }
+      }
 
          
     .samsung2 {display:none;} 
+    @media (min-width : 1120px) and (max-width: 6000px) {
+        
+      }
     .apple2{display:none;}
+    @media (min-width : 1120px) and (max-width: 6000px) {
+        
+      }
+
+     
+
+    
         
 
       

@@ -241,29 +241,31 @@
             </div>
 
             <span id="dots"></span>
-            <span id="more" class="more">
-              <div class="acer brands__card">
-                <img class="brands__img" src="/img/brands/acer.svg" />
-              </div>
-              <div class="sony brands__card">
-                <img class="brands__img" src="/img/brands/sony.svg" />
-              </div>
-              <div class="lenovo2 brands__card">
-                <img class="brands__img" src="/img/brands/lenovo.svg" />
-              </div>
-              <div class="samsung2 brands__card">
-                <img class="brands__img" src="/img/brands/samsung.png" />
-              </div>
-              <div class="apple2 brands__card">
-                <img class="brands__img" src="/img/brands/apple.svg" />
-              </div>
-            </span>
+            <!-- <div id="more" class="more"> -->
+            <div class="acer brands__card hidden" data-active="1">
+              <img class="brands__img" src="/img/brands/acer.svg" />
+            </div>
+            <div class="sony brands__card hidden" data-active="1">
+              <img class="brands__img" src="/img/brands/sony.svg" />
+            </div>
+            <div class="lenovo2 brands__card hidden" data-active="1">
+              <img class="brands__img" src="/img/brands/lenovo.svg" />
+            </div>
+            <div class="samsung2 brands__card hidden" data-active="1">
+              <img class="brands__img" src="/img/brands/samsung.png" />
+            </div>
+            <div class="apple2 brands__card hidden" data-active="1">
+              <img class="brands__img" src="/img/brands/apple.svg" />
+              <!-- </div> -->
+            </div>
           </div>
         </div>
 
         <div class="show">
           <img id="show-more-img" src="/img/arrow.svg" />
-          <button id="show-more" onclick="myFunction()">Показать все</button>
+          <button id="show-more" onclick="myFunction(); bigSize()">
+            Показать все
+          </button>
         </div>
         <script src="show-more.js"></script>
       </article>
