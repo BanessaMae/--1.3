@@ -655,7 +655,7 @@
             }
           } */
 
-    .hidden{
+    /* .hidden{
         display: none;
     }
 
@@ -681,7 +681,7 @@
     .apple2{display:none;}
     @media (min-width : 1120px) and (max-width: 6000px) {
         
-      }
+      } */
 
      
 
@@ -1029,4 +1029,8 @@
         }
 }
 
-    
+
+.hidden {
+    display: none !important;
+}
+
