@@ -27,84 +27,26 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body id="body">
     <header class="header">
-      <!-- Первый навбар нужно поменять чтобы меню всплывало вне зависимости -->
-
-      <nav class="navbar">
-        <input class="checkbox" type="checkbox" id="checkbox_toggle" />
-        <div class="side__panel side-panel__navbar">
-          <nav class="side_panel__header">
-            <label class="side-button-exit" for="checkbox_toggle">
-              <nav class="side-panel__exit" for="checkbox_toggle"></nav>
-            </label>
-            <img class="logo side-panel__logo" src="img/logo.svg" alt="logo" />
-            <nav class="search side-panel__search"></nav>
-          </nav>
-          <ul class="list__panel list__panel--scroll">
-            <li class="li__panel">
-              <a class="list__link" href="#">Ремонт техники</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Услуги и сервисы</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Корпоративным клиентам</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Продавцам техники</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Производителям</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Наши сервисные центры</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Партнерам</a>
-            </li>
-            <li class="li__panel">
-              <a class="list__link" href="#">Контакты</a>
-            </li>
-          </ul>
-
-          <footer class="nav__footer">
-            <a class="nav__footer__link" href="#"
-              ><nav class="phone side-panel__phone"></nav
-            ></a>
-            <a class="nav__footer__link" href="#"
-              ><nav class="message side-panel__message"></nav
-            ></a>
-            <a class="nav__footer__link" href="#"
-              ><nav class="office side-panel__office"></nav
-            ></a>
-            <a class="mail nav__footer__link" href="mailto:mail@htmlacademy.ru"
-              >mail@cps.com</a
-            >
-            <a class="number nav__footer__link" href="tel:+88008908900"
-              >8 800 890 8900</a
-            >
-            <a class="language" href="#">RU</a>
-            <a class="language" href="#">EN</a>
-            <a class="language" href="#">CH</a>
-          </footer>
-        </div>
+      <nav class="buttonCirlce navbar">
+        <button class="checkbox" id="checkbox_toggle" onchange="checkbox()" /> </nav>
       </nav>
 
-      <img
+      <!-- <img
         class="line header__line--disappear"
         src="img/divider.svg"
         alt="line"
-      />
-      <img class="logo logo__navbar" src="img/logo.svg" alt="logo" />
-      <nav class="phone phone--disappear"></nav>
-      <nav class="message message--disappear"></nav>
-      <nav class="office office--disappear"></nav>
-      <img class="line" src="img/divider.svg" alt="line" />
-      <h3 class="text__settings">Оставить заявку</h3>
-      <nav class="settings"></nav>
-      <h3 class="text__search">Статус ремонта</h3>
-      <nav class="search"></nav>
+      /> -->
+      <img class="divider logo logo__navbar" src="img/logo.svg" alt="logo" />
+      <button class="buttonCirlce buttonCirlce__phone phone--disappear"></button>
+      <button class="buttonCirlce buttonCirlce__message message--disappear"></button>
+      <button class="buttonCirlce  buttonCirlce__office office--disappear"></button>
+      <div class="divider dividerSmall"> </div>
+      <h3 class=" text__settings">Оставить заявку</h3>
+      <button class="buttonCirlce  buttonCirlce__settings divider "></button>
+      <h3 class=" text__search">Статус ремонта</h3>
+      <button class="buttonCirlce  buttonCirlce__search"></button>
     </header>
 
     <main class="main">
@@ -184,31 +126,31 @@
 
         <div class="image-slider swiper-container">
           <div class="image-slider__wrapper swiper-wrapper">
-            <div class="image-slider__slide swiper-slide lenovo">
+            <div class="circleArrow image-slider__slide swiper-slide lenovo">
               <img class="image-slider__image" src="img/brands/lenovo.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide samsung">
+            <div class="circleArrow image-slider__slide swiper-slide samsung">
               <img class="image-slider__image" src="img/brands/samsung.png" />
             </div>
-            <div class="image-slider__slide swiper-slide apple">
+            <div class="circleArrow image-slider__slide swiper-slide apple">
               <img class="image-slider__image" src="img/brands/apple.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide view">
+            <div class="circleArrow image-slider__slide swiper-slide view">
               <img class="image-slider__image" src="img/brands/view.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide bosch">
+            <div class="circleArrow image-slider__slide swiper-slide bosch">
               <img class="image-slider__image" src="img/brands/bosch.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide hp">
+            <div class="circleArrow image-slider__slide swiper-slide hp">
               <img class="image-slider__image" src="img/brands/hp.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide acer">
+            <div class="circleArrow image-slider__slide swiper-slide acer">
               <img class="image-slider__image" src="img/brands/acer.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide sony">
+            <div class="circleArrow image-slider__slide swiper-slide sony">
               <img class="image-slider__image" src="img/brands/sony.svg" />
             </div>
-            <div class="image-slider__slide swiper-slide lenovo2">
+            <div class="circleArrow image-slider__slide swiper-slide lenovo2">
               <img class="image-slider__image" src="img/brands/lenovo.svg" />
             </div>
           </div>
@@ -221,40 +163,40 @@
 
         <div class="brands__container">
           <div class="brands__wrapper">
-            <div class="lenovo brands__card">
+            <div class="circleArrow lenovo brands__card">
               <img class="brands__img" src="img/brands/lenovo.svg" />
             </div>
-            <div class="samsung brands__card">
+            <div class="circleArrow samsung brands__card">
               <img class="brands__img" src="img/brands/samsung.png" />
             </div>
-            <div class="apple brands__card">
+            <div class="circleArrow apple brands__card">
               <img class="brands__img" src="img/brands/apple.svg" />
             </div>
-            <div class="view brands__card">
+            <div class="circleArrow view brands__card">
               <img class="brands__img" src="img/brands/view.svg" />
             </div>
-            <div class="bosch brands__card">
+            <div class="circleArrow bosch brands__card">
               <img class="brands__img" src="img/brands/bosch.svg" />
             </div>
-            <div class="hp brands__card">
+            <div class="circleArrow hp brands__card">
               <img class="brands__img" src="img/brands/hp.svg" />
             </div>
 
             <span id="dots"></span>
             <!-- <div id="more" class="more"> -->
-            <div class="acer brands__card hidden" data-active="1">
+            <div class="circleArrow acer brands__card hidden" data-active="1">
               <img class="brands__img" src="img/brands/acer.svg" />
             </div>
-            <div class="sony brands__card hidden" data-active="1">
+            <div class="circleArrow sony brands__card hidden" data-active="1">
               <img class="brands__img" src="img/brands/sony.svg" />
             </div>
-            <div class="lenovo2 brands__card hidden" data-active="1">
+            <div class="circleArrow lenovo2 brands__card hidden" data-active="1">
               <img class="brands__img" src="img/brands/lenovo.svg" />
             </div>
-            <div class="samsung2 brands__card hidden" data-active="1">
+            <div class="circleArrow samsung2 brands__card hidden" data-active="1">
               <img class="brands__img" src="img/brands/samsung.png" />
             </div>
-            <div class="apple2 brands__card hidden" data-active="1">
+            <div class="circleArrow apple2 brands__card hidden" data-active="1">
               <img class="brands__img" src="img/brands/apple.svg" />
               <!-- </div> -->
             </div>
@@ -263,12 +205,84 @@
 
         <div class="show">
           <img id="show-more-img" src="img/arrow.svg" />
-          <button id="show-more" onclick="myFunction(); bigSize()">
+          <button id="show-more" onclick="seeMore(); hide()">
             Показать все
           </button>
         </div>
         <script src="show-more.js"></script>
       </article>
     </main>
+
+ <!-- всплывающее меню -->
+      <div id="closeModal" class="closeModal"></div>
+      <div class="side__panel side-panel__navbar modal" id="sidePanel">
+       
+       
+            <nav class="side_panel__header">
+            
+            <button class=" side-button-exit" for="checkbox_toggle">
+              <nav class="buttonCirlce side-panel__exit" for="checkbox_toggle"></nav>
+            </button>
+            
+            <img class="logo side-panel__logo" src="img/logo.svg" alt="logo" />
+            <nav class="buttonCirlce search side-panel__search"></nav>
+          </nav>
+          <ul class="list__panel list__panel--scroll">
+            <li class="li__panel">
+              <a class="list__link" href="#">Ремонт техники</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Услуги и сервисы</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Производителям</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Партнерам</a>
+            </li>
+            <li class="li__panel">
+              <a class="list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <footer class="nav__footer">
+            <a class="nav__footer__link" href="#"
+              ><nav class="buttonCirlce buttonCirlce__phone side-panel__phone"></nav
+            ></a>
+            <a class="nav__footer__link" href="#"
+              ><nav class="buttonCirlce buttonCirlce__message side-panel__message"></nav
+            ></a>
+            <a class="nav__footer__link" href="#"
+              ><nav class="buttonCirlce buttonCirlce__office side-panel__office"></nav
+            ></a>
+            <a class="mail nav__footer__link" href="mailto:mail@htmlacademy.ru"
+              >mail@cps.com</a
+            >
+            <a class="number nav__footer__link" href="tel:+88008908900"
+              >8 800 890 8900</a
+            >
+            <a class="language" href="#">RU</a>
+            <a class="language" href="#">EN</a>
+            <a class="language" href="#">CH</a>
+          </footer>
+
+          </div>
+       
+        
+
+        
+      
+
+
+
   </body>
 </html>

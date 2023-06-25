@@ -18,7 +18,10 @@
         background-color: #F8F8F8 ;
         max-width: 1120px;
         margin: auto;
+     
     }
+   
+    
     
     
     /* 1 часть Лого и виджеты */
@@ -52,19 +55,45 @@
             border-bottom: none;
         }
     }
+    
      
      /* Переделанный хедер */
 
      
      .navbar{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(navbar.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+        background-image: url(/img/ikon/navbar.svg);
+     }
+
+     
+     @media (min-width : 768px) and (max-width: 1119px) {
+        .logo{
+            padding-left: 15px;
+    
+         }
+       }
+
+     @media (min-width : 768px) and (max-width: 1119px) {
+        .divider,.logo{
+           background-image:url(/img/divider.svg);
+           background-repeat: no-repeat;
+           background-position:left;
+           min-width: 2px;
+           min-height: 32px;
+        }
+       }
+      
+
+       .divider+.logo{
+        display: none;
+     }
+
+     .divider.dividerSmall{
+        background-image:url(/img/divider.svg);
+           background-repeat: no-repeat;
+           background-position:left;
+           min-width: 2px;
+           min-height: 32px;
+        display: block;
      }
      
      
@@ -84,18 +113,21 @@
              }
             }
         
-     
-
-     .phone{
+    .buttonCirlce{
         height: 40px;
         width: 40px;
         background-color: #FF3E79;
         border-radius: 50%;
-        background-image: url(phone.svg) ;
         background-repeat: no-repeat;
         background-position:center;
         cursor: pointer;
+    }
+
+     .buttonCirlce__phone{
+        background-image: url(/img/ikon/phone.svg) ;
+        border:0;
      }
+
      .phone--disappear{
         display: none;
      }
@@ -106,15 +138,9 @@
          }
        }
 
-     .message{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(message1.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+     .buttonCirlce__message{
+        background-image: url(/img/ikon/message1.svg) ;
+        border:0;
      }
      .message--disappear{
         display: none;
@@ -125,15 +151,9 @@
          }
        }
 
-     .office{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(office.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+     .buttonCirlce__office{
+        background-image: url(/img/ikon/office.svg) ;
+        border:0;
      }
      
      .office--disappear{
@@ -146,29 +166,19 @@
          }
        }
 
-    .settings{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(settings.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+    .buttonCirlce__settings{
+        background-image: url(/img/ikon/settings.svg) ;
+        border:0;
     }
+   
+
     .text__settings{
         display: none;
     }
 
-    .search{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(search.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+    .buttonCirlce__search{
+        background-image: url(/img/ikon/search.svg) ;
+        border:0;
     }
     @media (min-width : 1120px) and (max-width: 4000px) {
         .search{
@@ -271,7 +281,7 @@
         list-style-type: none;
         white-space: nowrap;
         padding-left: 16px;
-        z-index: 9;
+        z-index: 0.1;
     }
     @media (min-width : 1120px) and (max-width: 4000px) {   
       .scroller__items{
@@ -424,7 +434,7 @@
         font-size: 16px;
         font-weight: 400;
         height: 48px;
-        width: 288px;
+        width: 100%;
         line-height: 24px;
         text-transform: uppercase;
         letter-spacing: -0.2px;
@@ -457,6 +467,7 @@
   
     .image-slider{
         overflow-x: hidden;
+        z-index: 0;
     }
 
     .image-slider .moy_style{
@@ -472,6 +483,12 @@
         background-color: #B5B6BC;
     }
 
+    .circleArrow{
+        background-image: url(arrowone.svg);
+        background-repeat: no-repeat;
+        background-position: 185px 15px;
+    }
+
     .swiper-wrapper .swiper-slide{
         display: flex; 
         flex-direction: column;
@@ -485,9 +502,6 @@
         background-color: white;
         border: 2px solid #EAEAEA ;
         border-radius:8px;
-        background-image: url(arrowone.svg);
-        background-repeat: no-repeat;
-        background-position: 185px 15px;
     }
 
     .image-slider__image {
@@ -550,14 +564,12 @@
         margin-top: 24px;
         float: right;
     }
-    
-    /* @media (min-width : 1120px) and (max-width: 6000px) {
-        .brands__wrapper{
-            grid-template-columns: 240px 240px 240px 240px;
-            grid-column-gap: 32px;
-        }
-    } */
-
+ 
+    .circleArrow{
+        background-image: url(arrowone.svg);
+        background-repeat: no-repeat;
+        background-position: 11em 1em;
+    }
    
 
     .brands__card{
@@ -570,9 +582,7 @@
         background-color: white;
         border: 2px solid #EAEAEA ;
         border-radius:8px;
-        background-image: url(arrowone.svg);
-        background-repeat: no-repeat;
-        background-position: 170px 15px;
+     
     }
 
     @media (min-width : 1120px) and (max-width: 6000px) {
@@ -729,7 +739,7 @@
     /* Всплывающее меню */
     /* шапка */
     
-    #checkbox_toggle:checked + .side-panel__navbar{
+    /* #checkbox_toggle:checked + .side-panel__navbar{
         display: none;
     }
     #checkbox_toggle:checked + .side-panel__navbar{
@@ -737,7 +747,7 @@
     }
     #checkbox_toggle:checked + .side-panel__navbar {
         left: 0;
-    }
+    } */
 
     .checkbox{
         opacity:0;
@@ -750,22 +760,43 @@
         cursor: pointer;
     }
 
+
     .side-panel__navbar{
         display: none;
     }
 
+
+
+    .side__panel {
+        overflow: auto;
+    }
+
     .side-panel__navbar {
-        position: absolute;
-        z-index: 999999;
+        display: block;
+        position: fixed;
+        z-index: 2;
         top: 0;
-        left: -360px;
+        left: -400px;
         background: white;
-        transition: all 0.5s;   
+        transition: all 1s;
         width: 320px;
-        min-height: 100rem;
+        height: 100vh;
         box-shadow: 30px 0 30px rgba(0,0,0,0.4);
         color: #FFF; 
+        overflow-y: auto;
+    
+       
     }
+
+    
+
+    .side__panel__active{
+        display: block;
+        left: 0px;
+   
+    }
+    
+
 
     .side_panel__header{
         display: flex;
@@ -776,10 +807,26 @@
         
     }
 
+    .closeModal{
+        display: none;
+    }
+
+    .closeModal__active{
+       display: block;
+        position: fixed;
+        top: 0;
+        left: 320px;
+        width: 100%;
+        height: 100vh;
+       }
+
+   
     
     .side-button-exit {
         font-size: 30px;
         border-radius: 20px;
+        border-style: solid;
+        border-color: white;
         position: relative;
         z-index: 1;
         cursor: pointer;
@@ -794,18 +841,15 @@
     }
 
     .side-panel__exit{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(exit.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
+        background-image: url(/img/exit.svg) ;
     }
 
     .side-panel__logo{
         padding-right: 60px;
+        background-image:none;
     }
+
+    
     @media (min-width : 768px) and (max-width:6000px) {
         .side-panel__logo{
             padding-right: 60px;
@@ -814,14 +858,7 @@
     
 
     .side-panel__search{
-        height: 40px;
-        width: 40px;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        background-image: url(search_nav.svg) ;
-        background-repeat: no-repeat;
-        background-position:center;
-        cursor: pointer;
+        background-image: url(/img/search_nav.svg) ;
         transition: all 280ms ease-in-out;  
     }
     .side-panel__search:hover {
@@ -887,9 +924,7 @@
         vertical-align:bottom; 
     }
    
-    .side-panel__phone{
-        
-    }
+   
     .mail{
         color:#1B1C21;
         grid-column-start: 1;
