@@ -61,11 +61,7 @@
 
      
      .navbar{
-<<<<<<< Updated upstream
-        background-image: url(img/navbar.svg);
-=======
         background-image: url(../img/ikon/navbar.svg);
->>>>>>> Stashed changes
      }
 
      
@@ -78,11 +74,7 @@
 
      @media (min-width : 768px) and (max-width: 1119px) {
         .divider,.logo{
-<<<<<<< Updated upstream
-           background-image:url(img/divider.svg);
-=======
            background-image:url(../img/divider.svg);
->>>>>>> Stashed changes
            background-repeat: no-repeat;
            background-position:left;
            min-width: 2px;
@@ -96,11 +88,7 @@
      }
 
      .divider.dividerSmall{
-<<<<<<< Updated upstream
-        background-image:url(img/divider.svg);
-=======
         background-image:url(../img/divider.svg);
->>>>>>> Stashed changes
            background-repeat: no-repeat;
            background-position:left;
            min-width: 2px;
@@ -136,11 +124,7 @@
     }
 
      .buttonCirlce__phone{
-<<<<<<< Updated upstream
-        background-image: url(img/ikon/phone.svg) ;
-=======
         background-image: url(../img/ikon/phone.svg) ;
->>>>>>> Stashed changes
         border:0;
      }
 
@@ -168,11 +152,7 @@
        }
 
      .buttonCirlce__office{
-<<<<<<< Updated upstream
-        background-image: url(img/ikon/office.svg) ;
-=======
         background-image: url(../img/ikon/office.svg) ;
->>>>>>> Stashed changes
         border:0;
      }
      
@@ -197,11 +177,7 @@
     }
 
     .buttonCirlce__search{
-<<<<<<< Updated upstream
-        background-image: url(img/ikon/search.svg) ;
-=======
         background-image: url(../img/ikon/search.svg) ;
->>>>>>> Stashed changes
         border:0;
     }
     @media (min-width : 1120px) and (max-width: 4000px) {
@@ -865,11 +841,7 @@
     }
 
     .side-panel__exit{
-<<<<<<< Updated upstream
-        background-image: url(img/exit.svg) ;
-=======
         background-image: url(../img/exit.svg) ;
->>>>>>> Stashed changes
     }
 
     .side-panel__logo{
@@ -886,11 +858,7 @@
     
 
     .side-panel__search{
-<<<<<<< Updated upstream
-        background-image: url(img/search_nav.svg) ;
-=======
         background-image: url(../img/search_nav.svg) ;
->>>>>>> Stashed changes
         transition: all 280ms ease-in-out;  
     }
     .side-panel__search:hover {
