@@ -61,7 +61,7 @@
 
      
      .navbar{
-        background-image: url(/img/ikon/navbar.svg);
+        background-image: url(img/ikon/navbar.svg);
      }
 
      
@@ -74,7 +74,7 @@
 
      @media (min-width : 768px) and (max-width: 1119px) {
         .divider,.logo{
-           background-image:url(/img/divider.svg);
+           background-image:url(img/divider.svg);
            background-repeat: no-repeat;
            background-position:left;
            min-width: 2px;
@@ -88,7 +88,7 @@
      }
 
      .divider.dividerSmall{
-        background-image:url(/img/divider.svg);
+        background-image:url(img/divider.svg);
            background-repeat: no-repeat;
            background-position:left;
            min-width: 2px;
@@ -124,7 +124,7 @@
     }
 
      .buttonCirlce__phone{
-        background-image: url(/img/ikon/phone.svg) ;
+        background-image: url(img/ikon/phone.svg) ;
         border:0;
      }
 
@@ -139,7 +139,7 @@
        }
 
      .buttonCirlce__message{
-        background-image: url(/img/ikon/message1.svg) ;
+        background-image: url(img/ikon/message1.svg) ;
         border:0;
      }
      .message--disappear{
@@ -152,7 +152,7 @@
        }
 
      .buttonCirlce__office{
-        background-image: url(/img/ikon/office.svg) ;
+        background-image: url(img/ikon/office.svg) ;
         border:0;
      }
      
@@ -167,7 +167,7 @@
        }
 
     .buttonCirlce__settings{
-        background-image: url(/img/ikon/settings.svg) ;
+        background-image: url(img/ikon/settings.svg) ;
         border:0;
     }
    
@@ -177,7 +177,7 @@
     }
 
     .buttonCirlce__search{
-        background-image: url(/img/ikon/search.svg) ;
+        background-image: url(img/ikon/search.svg) ;
         border:0;
     }
     @media (min-width : 1120px) and (max-width: 4000px) {
@@ -841,7 +841,7 @@
     }
 
     .side-panel__exit{
-        background-image: url(/img/exit.svg) ;
+        background-image: url(img/exit.svg) ;
     }
 
     .side-panel__logo{
@@ -858,7 +858,7 @@
     
 
     .side-panel__search{
-        background-image: url(/img/search_nav.svg) ;
+        background-image: url(img/search_nav.svg) ;
         transition: all 280ms ease-in-out;  
     }
     .side-panel__search:hover {
