@@ -139,7 +139,7 @@
        }
 
      .buttonCirlce__message{
-        background-image: url(img/message1.svg) ;
+        background-image: url(../img/message1.svg) ;
         border:0;
      }
      .message--disappear{
@@ -167,7 +167,7 @@
        }
 
     .buttonCirlce__settings{
-        background-image: url(img/settings.svg) ;
+        background-image: url(../img/settings.svg) ;
         border:0;
     }
    
