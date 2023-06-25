@@ -484,7 +484,7 @@
     }
 
     .circleArrow{
-        background-image: url(arrowone.svg);
+        background-image: url(../img/arrowone.svg);
         background-repeat: no-repeat;
         background-position: 185px 15px;
     }
@@ -566,7 +566,7 @@
     }
  
     .circleArrow{
-        background-image: url(arrowone.svg);
+        background-image: url(../img/arrowone.svg);
         background-repeat: no-repeat;
         background-position: 11em 1em;
     }
