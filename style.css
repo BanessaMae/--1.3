@@ -685,7 +685,7 @@ ul.scroller__items li a:hover {
   .technic__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: top;
     grid-column-gap: 18px;
     grid-row-gap: 16px; }
     .technic__wrapper .technic__card {
@@ -1285,7 +1285,7 @@ ul.scroller__items li a:hover {
   .technic__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: top;
     grid-column-gap: 18px;
     grid-row-gap: 16px; }
     .technic__wrapper .technic__card {
