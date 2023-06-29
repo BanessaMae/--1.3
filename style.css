@@ -661,7 +661,7 @@ ul.scroller__items li a:hover {
   .technic__wrapper .technic__card {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: start;
     text-align: left;
     min-height: 160px;
     min-width: 224px;
@@ -691,7 +691,7 @@ ul.scroller__items li a:hover {
     .technic__wrapper .technic__card {
       display: flex;
       flex-direction: column;
-      justify-content: top;
+      justify-content: start;
       text-align: left;
       min-height: 160px;
       min-width: 240px;
@@ -1261,7 +1261,7 @@ ul.scroller__items li a:hover {
   .technic__wrapper .technic__card {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: start;
     text-align: left;
     min-height: 160px;
     min-width: 224px;
@@ -1291,7 +1291,7 @@ ul.scroller__items li a:hover {
     .technic__wrapper .technic__card {
       display: flex;
       flex-direction: column;
-      justify-content: top;
+      justify-content: start;
       text-align: left;
       min-height: 160px;
       min-width: 240px;
