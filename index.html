@@ -17,14 +17,15 @@
   <link href="style.css" rel="stylesheet"></head>
   <body id="body">
     <header class="header">
+
       <nav class="buttonCirlce navbar">
         <button class="checkbox" id="checkbox_toggle" onchange="checkbox()"> </nav>
       
 
       
       <img class="divider logo logo__navbar" src="img/logo.svg" alt="logo">
-      <button class="buttonCirlce buttonCirlce__phone phone--disappear"></button>
-      <button class="buttonCirlce buttonCirlce__message message--disappear"></button>
+      <button class="buttonCirlce buttonCirlce__phone phone--disappear" id="buttonCirlce__phone"></button>
+      <button class="buttonCirlce buttonCirlce__message message--disappear" id="buttonCirlce__message"></button>
       <button class="buttonCirlce buttonCirlce__office office--disappear"></button>
       <div class="divider dividerSmall"> </div>
       <h3 class="text__settings">Оставить заявку</h3>
@@ -91,40 +92,40 @@
       </div>
 
       
-      <article class="brands">
-        <h2 class="title__brands">Ремонт техники различных брендов</h2>
+      <article class="name-block brands">
+        <h2 class="title">Ремонт техники различных брендов</h2>
 
         <div class="image-slider swiper-container">
-          <div class="image-slider__wrapper swiper-wrapper">
-            <div class="circleArrow image-slider__slide swiper-slide lenovo">
+          <ul class="image-slider__wrapper swiper-wrapper">
+            <li class="circleArrow image-slider__slide swiper-slide lenovo">
               <img class="image-slider__image" src="img/brands/lenovo.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide samsung">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide samsung">
               <img class="image-slider__image" src="img/brands/samsung.png">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide apple">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide apple">
               <img class="image-slider__image" src="img/brands/apple.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide view">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide view">
               <img class="image-slider__image" src="img/brands/view.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide bosch">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide bosch">
               <img class="image-slider__image" src="img/brands/bosch.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide hp">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide hp">
               <img class="image-slider__image" src="img/brands/hp.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide acer">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide acer">
               <img class="image-slider__image" src="img/brands/acer.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide sony">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide sony">
               <img class="image-slider__image" src="img/brands/sony.svg">
-            </div>
-            <div class="circleArrow image-slider__slide swiper-slide lenovo2">
+            </li>
+            <li class="circleArrow image-slider__slide swiper-slide lenovo2">
               <img class="image-slider__image" src="img/brands/lenovo.svg">
-            </div>
-          </div>
-          <div class="gradient gradient__swiper"></div>
+            </li>
+          </ul>
+          
           <div class="moy_style swiper-pagination"></div>
 
           <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -132,45 +133,45 @@
         </div>
 
         <div class="brands__container">
-          <div class="brands__wrapper">
-            <div class="circleArrow lenovo brands__card">
+          <ul class="wrapper brands__wrapper">
+            <li class="circleArrow lenovo brands__card">
               <img class="brands__img" src="img/brands/lenovo.svg">
-            </div>
-            <div class="circleArrow samsung brands__card">
+            </li>
+            <li class="circleArrow samsung brands__card">
               <img class="brands__img" src="img/brands/samsung.png">
-            </div>
-            <div class="circleArrow apple brands__card">
+            </li>
+            <li class="circleArrow apple brands__card">
               <img class="brands__img" src="img/brands/apple.svg">
-            </div>
-            <div class="circleArrow view brands__card">
+            </li>
+            <li class="circleArrow view brands__card">
               <img class="brands__img" src="img/brands/view.svg">
-            </div>
-            <div class="circleArrow bosch brands__card">
+            </li>
+            <li class="circleArrow bosch brands__card">
               <img class="brands__img" src="img/brands/bosch.svg">
-            </div>
-            <div class="circleArrow hp brands__card">
+            </li>
+            <li class="circleArrow hp brands__card">
               <img class="brands__img" src="img/brands/hp.svg">
-            </div>
+            </li>
 
             <span id="dots"></span>
             
-            <div class="circleArrow acer brands__card hidden" data-active="1">
+            <li class="circleArrow acer brands__card hidden">
               <img class="brands__img" src="img/brands/acer.svg">
-            </div>
-            <div class="circleArrow sony brands__card hidden" data-active="1">
+            </li>
+            <li class="circleArrow sony brands__card hidden">
               <img class="brands__img" src="img/brands/sony.svg">
-            </div>
-            <div class="circleArrow lenovo2 brands__card hidden" data-active="1">
+            </li>
+            <li class="circleArrow lenovo2 brands__card hidden">
               <img class="brands__img" src="img/brands/lenovo.svg">
-            </div>
-            <div class="circleArrow samsung2 brands__card hidden" data-active="1">
+            </li>
+            <li class="circleArrow samsung2 brands__card hidden">
               <img class="brands__img" src="img/brands/samsung.png">
-            </div>
-            <div class="circleArrow apple2 brands__card hidden" data-active="1">
+            </li>
+            <li class="circleArrow apple2 brands__card hidden">
               <img class="brands__img" src="img/brands/apple.svg">
               
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div class="show">
@@ -181,7 +182,254 @@
         </div>
         <script type="module" src="/src/js/index.js"></script>
       </article>
-    </main>
+   
+
+
+
+
+
+     
+     <article class="name-block technic">
+      <h2 class="title">Ремонт различных видов техники</h2>
+
+      <div class="image-slider swiper-container">
+        <ul class="image-slider__wrapper swiper-wrapper">
+          <li class="circleArrow image-slider__slide swiper-slide">
+           <p> Ремонт ноутбуков </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт планшетов </p>
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+           <p> Ремонт ПК </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт мониторов </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт наушников </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт клавиатуры </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p> Ремонт колонок </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт телевизоров </p> 
+          </li>
+          <li class="circleArrow image-slider__slide swiper-slide">
+            <p>Ремонт телефонов</p> 
+        </li>
+      </ul>
+        
+        <div class="moy_style swiper-pagination"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script type="module" src="/src/js/index.js"></script>
+      </div>
+
+      <div class="technic__container">
+        <ul class="wrapper technic__wrapper">
+          <li class="circleArrow technic__card technic__card__1">
+            <p> Ремонт ноутбуков </p> 
+          </li>
+          <li class="circleArrow technic__card technic__card__2">
+            <p>Ремонт планшетов </p>
+          </li>
+          <li class="circleArrow technic__card technic__card__3">
+            <p> Ремонт ПК </p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__4">
+            <p>Ремонт мониторов </p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__5">
+            <p>Ремонт наушников </p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__6">
+            <p>Ремонт клавиатуры </p> 
+          </li>
+
+          <span id="dots2"></span>
+          
+          <li class="circleArrow technic__card hidden technic__card__7">
+            <p> Ремонт колонок </p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__8">
+            <p>Ремонт телевизоров </p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__9">
+            <p>Ремонт телефонов</p> 
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__10">
+            <p> Ремонт планшетов </p>
+          </li>
+          <li class="circleArrow technic__card hidden technic__card__11">
+            <p> Ремонт блоков  </p>
+            
+          </li>
+        </ul>
+      </div>
+
+      <div class="show2">
+        <img id="show-more-img2" src="img/arrow.svg">
+        <button id="show-more2">
+          Показать все
+        </button>
+      </div>
+      <script type="module" src="/src/js/index.js"></script>
+    </article>
+
+
+    
+    <article class="name-block about-the-product">
+      <h2 class="title">цены на услуги</h2>
+
+      <div class="image-slider swiper-container">
+        <ul class="image-slider__wrapper swiper-wrapper">
+          <li class="image-slider__slide swiper-slide">
+            <div class="service">
+            <h4>Ремонтные услуги</h4>
+            <p>Диагностика</p>
+            </div>
+            <div class="price">
+            <h4>Цена</h4>
+            <p>Бесплатно</p>
+            </div>
+            <div class="term">
+            <h4>Срок</h4>
+            <p>30 мин</p>
+            </div>
+            <button>Заказать </button>
+          </li>
+          <li class="image-slider__slide swiper-slide">
+            <div class="service">
+              <h4>Ремонтные услуги</h4>
+              <p>Замена дисплея</p>
+              </div>
+              <div class="price">
+              <h4>Цена</h4>
+              <p>1000 &#8381;</p>
+              </div>
+              <div class="term">
+              <h4>Срок</h4>
+              <p>30-120 мин</p>
+              </div>
+              <button>Заказать </button>
+          </li>
+          <li class="image-slider__slide swiper-slide">
+            <div class="service">
+              <h4>Ремонтные услуги</h4>
+              <p>Замена полифонического динамика</p>
+              </div>
+              <div class="price">
+              <h4>Цена</h4>
+              <p>1000 &#8381;</p>
+              </div>
+              <div class="term">
+              <h4>Срок</h4>
+              <p>30-120 мин</p>
+              </div>
+              <button>Заказать </button>
+          </li>
+          <li class="image-slider__slide swiper-slide">
+              <div class="service">
+              <h4>Ремонтные услуги</h4>
+              <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="price">
+              <h4>Цена</h4>
+              <p>1000 &#8381;</p>
+              </div>
+              <div class="term">
+              <h4>Срок</h4>
+              <p>30-120 мин</p>
+              </div>
+              <button>Заказать </button>
+          </li>
+          <li class="image-slider__slide swiper-slide">
+              <div class="service">
+              <h4>Ремонтные услуги</h4>
+              <p>Замена программного обеспечения</p>
+              </div>
+              <div class="price">
+              <h4>Цена</h4>
+              <p>1000 &#8381;</p>
+              </div>
+              <div class="term">
+              <h4>Срок</h4>
+              <p>30-120 мин</p>
+              </div>
+              <button>Заказать </button>
+          </li>
+        </ul>
+        
+        <div class="moy_style swiper-pagination"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script type="module" src="/src/js/index.js"></script>
+      </div>
+
+      <table class="about-the-product__container">
+        <thead>
+        <tr>
+          <th>Ремонтные услуги</th>
+          <th>Цена</th>
+          <th>Срок</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Диагностика</td>
+          <td>Бесплатно</td>
+          <td>30 мин </td>
+          <td> 
+         <input type="button" value="Заказать">
+        </td>
+        </tr>
+        <tr>
+          <td>Замена дисплея</td>
+          <td>1000 &#8381;</td>
+          <td>30-120 мин</td>
+          <td> 
+            <input type="button" value="Заказать">
+           </td>
+        </tr>
+        <tr>
+          <td>Замена полифонического динамика</td>
+          <td>1000 &#8381;</td>
+          <td>30-120 мин</td>
+          <td> 
+            <input type="button" value="Заказать">
+           </td>
+        </tr>
+        <tr>
+          <td>Тестирование с выдачей технического заключения</td>
+          <td>1000 &#8381;</td>
+          <td>30-120 мин</td>
+          <td> 
+            <input type="button" value="Заказать">
+           </td>
+        </tr>
+        <tr>
+          <td>Замена программного обеспечения</td>
+          <td>1000 &#8381;</td>
+          <td>30-120 мин</td>
+          <td> 
+            <input type="button" value="Заказать">
+           </td>
+        </tr>
+      </tbody>
+      </table>
+    
+      <p class="aboutPrice">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+      <a>Получить коммерческое предложение</a>
+    
+      <script type="module" src="/src/js/index.js"></script>
+    </article>
+  </main>
+
+
 
  
       <div id="closeModal" class="closeModal"></div>
@@ -225,8 +473,8 @@
           </ul>
 
           <footer class="nav__footer">
-            <a class="nav__footer__link" href="#"><nav class="buttonCirlce buttonCirlce__phone side-panel__phone"></nav></a>
-            <a class="nav__footer__link" href="#"><nav class="buttonCirlce buttonCirlce__message side-panel__message"></nav></a>
+            <a class="nav__footer__link" href="#"><nav class="buttonCirlce buttonCirlce__phone side-panel__phone" id="buttonCirlce__phone2"></nav></a>
+            <a class="nav__footer__link" href="#"><nav class="buttonCirlce buttonCirlce__message side-panel__message" id="buttonCirlce__message2"></nav></a>
             <a class="nav__footer__link" href="#"><nav class="buttonCirlce buttonCirlce__office side-panel__office"></nav></a>
             <a class="mail nav__footer__link" href="mailto:mail@htmlacademy.ru">mail@cps.com</a>
             <a class="number nav__footer__link" href="tel:+88008908900">8 800 890 8900</a>
@@ -235,9 +483,72 @@
             <a class="language" href="#">CH</a>
           </footer>
 
-          </div>
+        </div>
+
+
+
+
+
+  
+  <div id="closeModalCall" class="closeModalCall">
+    <button class="callback-exit__CloseModalCall">
+      <nav class="buttonCirlce side-panel__exit" for="checkbox_toggle"></nav>
+    </button>
+  </div>
+  <div class="callback" id="callback">
+    <button class="callback-exit" for="checkbox_toggle">
+      <nav class="buttonCirlce side-panel__exit" for="checkbox_toggle"></nav>
+    </button>
+    <h2> Заказать звонок </h2>
+    <input type="number" placeholder="Телефон"> 
+    <p>Нажимая “отправить”, вы даете согласие 
+      на <span>обработку персональных данных</span> и 
+      соглашаетесь с нашей <span>политикой 
+        конфиденциальности</span></p>
+
+    <button class="send">Отправить</button>
+  </div>
+
+
+
+ 
+ <div id="closeModalSend" class="closeModalSend">
+  <button class="feedback-exit__CloseModalSend">
+    <nav class="buttonCirlce side-panel__exit" for="checkbox_toggle"></nav>
+  </button>
+</div>
+<div class="feedback" id="feedback">
+  <button class="feedback-exit" for="checkbox_toggle">
+    <nav class="buttonCirlce side-panel__exit" for="checkbox_toggle"></nav>
+  </button>
+  <h2> Обратная связь</h2>
+  <input type="text" name="name" placeholder="Имя"> 
+  <input type="number" name="number" placeholder="Телефон"> 
+  <input type="email" name="email" placeholder="Электронная почта"> 
+  <input type="text" name="message" placeholder="Сообщение"> 
+  <p>Нажимая “отправить”, вы даете согласие 
+    на <span>обработку персональных данных</span> и 
+    соглашаетесь с нашей <span>политикой 
+      конфиденциальности</span></p>
+
+  <button class="send">Отправить</button>
+</div>
+
+
+
+
+
+
        
-        
+
+    <footer class="footer">
+      <p>© 2019 CPS
+        Разработано командой Apesong </p>
+      <p>Политика конфиденциальности </p>
+      <p>Информация, размещенная на данной странице, 
+        не является публичной офертой</p>
+
+    </footer>
 
         
       
