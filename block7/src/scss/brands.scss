@@ -1,0 +1,321 @@
+$border-color: #EAEAEA;
+$background-arrow: url(../img/arrowone.svg);
+@import '../scss/technic.scss';
+
+
+.name-block{
+    background-color: #F8F8F8;
+    .title{
+        font-size: 16px;
+        font-weight: 400;
+        height: 48px;
+        width: 97%;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+        padding: 15px;
+        border-top: 1px solid #D9FFF5;
+        background: linear-gradient(45deg, rgb(248, 248, 248) 22%, rgb(255, 255, 255) 37%);
+    }
+}    
+
+@media (min-width : 768px) and (max-width: 6000px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 24px ;
+        font-size: 16px;
+        font-weight: 400;
+        height: 56px;
+        width: 97%;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+        border-top: 1px solid #D9FFF5;
+        background:  linear-gradient(45deg, rgb(248, 248, 248) 22%, rgb(255, 255, 255) 37%);
+    }
+}
+
+/* swipper */
+
+.image-slider{
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.image-slider .moy_style{
+    position: inherit;
+    margin-top: 16px;
+}
+
+.image-slider .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #B5B6BC;
+}
+
+.brands{
+    .swiper-slide{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        min-height: 72px;
+        min-width: 240px;
+        max-height: 72px;
+        max-width: 240px;
+        margin-top: 16px ;
+        margin-left: 16px;
+        background-color: white;
+        border: 2px solid $border-color ;
+        border-radius:8px;
+    }
+}
+
+.circleArrow{
+    background-image: $background-arrow;
+    background-repeat: no-repeat;
+    background-position: 185px 15px;
+}
+
+// .swiper-wrapper .swiper-slide{
+//     display: flex; 
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: left;
+//     min-height: 72px;
+//     min-width: 240px;
+//     max-height: 72px;
+//     max-width: 240px;
+//     margin-top: 16px ;
+//     background-color: white;
+//     border: 2px solid $border-color ;
+//     border-radius:8px;
+// }
+
+.image-slider__image {
+    max-height: 39px;
+    max-width: 116px;
+    padding-left: 16px;
+}
+.apple > .image-slider__image{
+    width: 18%;
+    height: 44px;
+    padding-bottom: 10px;
+}
+.hp > .image-slider__image{
+    width: 18%;
+    height: 52px;
+}
+.lenovo{
+    margin-left: 16px;
+}
+@media (min-width : 768px) and (max-width: 6000px) {
+    .lenovo{
+        margin-left: 0px;
+    }
+    }
+
+
+.gradient__brands{
+    position: absolute;
+    bottom: 35px;
+    height: 75px;
+    width: 30px;
+    right: -42px;
+    z-index: 1;
+}
+
+ 
+/* Убираем из виду второй блок(копия свипера), при экране менее 768 */
+
+.brands__container{
+display: none;
+}
+/* показывает копию блока с свипером */
+@media (min-width : 768px) and (max-width: 6009px) {
+.brands__container{
+    display: block;
+   }
+}
+ /* Убираем из виду свипер блок, при экране более 768 */
+@media (min-width : 768px) and (max-width: 6000px) {
+    .image-slider{
+        display: none;
+       }
+    }
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    padding-right: 24px;
+    grid-column-gap: 18px;
+    grid-row-gap: 16px;
+    margin-top: 24px;
+}
+
+.circleArrow{
+    background-image: $background-arrow;
+    background-repeat: no-repeat;
+    background-position: 11em 1em;
+}
+
+
+.brands__card{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-height: 72px;
+    min-width: 224px;
+    background-color: white;
+    border: 2px solid $border-color ;
+    border-radius:8px;
+}
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+   .brands__card{
+    min-width: 240px;
+    }
+}
+
+
+.brands__img{
+    max-height: 39px;
+    max-width: 116px;
+    padding-left: 16px;
+}
+@media (min-width : 768px) and (max-width: 1119px) {
+    .lenovo{
+        margin-left: 0;
+    }
+    }
+
+ @media (min-width : 768px) and (max-width: 1119px) {
+    .apple> .brands__img{
+        width: 18%;
+        height: 44px;
+        padding-bottom: 10px;
+     }
+    }
+    @media (min-width : 1120px) and (max-width: 6600px) {
+        .apple> .brands__img{
+            width: 18%;
+            height: 44px;
+            padding-bottom: 10px;
+         }
+        }
+
+@media (min-width : 768px) and (max-width: 1119px) {
+    .hp > .brands__img{
+        width: 18%;
+        height: 52px;
+    }
+  }
+  @media (min-width : 1120px) and (max-width: 6000px) {
+    .hp > .brands__img{
+        width: 18%;
+        height: 52px;
+    }
+  }
+  
+  #dots{
+    position: absolute;
+  }
+
+  .show{
+    display: none;
+  }
+  @media (min-width : 768px) and (max-width: 6000px) {
+    .show{
+        display: block;
+      }
+  }
+
+  
+  .brands__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        grid-column-gap: 18px;
+        grid-row-gap: 16px;
+    }
+
+    /* @media (min-width : 1120px) and (max-width: 6000px) {
+        .more{
+            display: flex;
+            flex-wrap: nowrap;
+            grid-template-columns: 224px 224px 224px 224px;
+            grid-template-rows: 72px 72px 72px;
+            padding-right: 24px;
+            grid-column-gap: 32px;
+            grid-row-gap: 16px;
+        }
+      } */
+
+.hidden{
+    display: none;
+}
+
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+    .acer{
+        display: flex;
+    }
+  }
+
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+    .sony{
+        display: flex;
+    }
+  }
+
+     
+.samsung2 {display:none;} 
+@media (min-width : 1120px) and (max-width: 6000px) {
+    
+  }
+.apple2{display:none;}
+@media (min-width : 1120px) and (max-width: 6000px) {
+    
+  }
+
+  
+ 
+/* @media (min-width : 1120px) and (max-width: 6000px) {
+    #more{
+        display: block;
+      }
+  } */
+
+  #show-more{
+    color:  #1B1C21;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 170px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F8F8F8;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+    }
+
+    #show-more-img{
+        height: 15px;
+        width: 15px;
+        padding: 0 0 0 35px;
+        transform: rotateX(0);
+    }
+
+

@@ -1,0 +1,165 @@
+.technic{
+    .title{
+        margin-top: 20px;
+    }
+    .swiper-slide{
+        display: flex; 
+        flex-direction: column;
+        justify-content: top;
+        text-align: left;
+        min-height: 160px;
+        min-width: 240px;
+        max-height: 160px;
+        max-width: 240px;
+        margin-top: 16px ;
+        margin-left: 16px;
+        background-color: white;
+        border: 2px solid $border-color ;
+        border-radius:8px;
+        font-weight: 600;
+        color:#1B1C21;
+        p{
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+    }
+    .circleArrow{
+        background-position: 11em 6.5em;
+    }
+}    
+
+
+.gradient__technic{
+    position: absolute;
+    bottom: -270px;
+    height:180px;
+    width: 50px;
+    right: -42px;
+    z-index: 1;
+}
+
+
+.technic__container{
+    display: none;
+    }
+
+@media (min-width : 768px) and (max-width: 6009px) {
+    .technic__container{
+        display: block;
+       }
+    }
+
+
+.technic__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    grid-column-gap: 18px;
+    grid-row-gap: 16px;
+    .technic__card{
+        display: flex; 
+        flex-direction: column;
+        justify-content: top;
+        text-align: left;
+        min-height: 160px;
+        min-width: 224px;
+        background-color: white;
+        border: 2px solid $border-color ;
+        border-radius:8px;
+        &.hidden{
+            display: none;
+        }
+    }
+    .circleArrow{
+        background-image: $background-arrow;
+        background-repeat: no-repeat;
+        background-position: 10.8em 6.5em;
+    }
+    p{
+        padding-top: 20px;
+        padding-left: 15px;
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+    .technic__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-column-gap: 18px;
+        grid-row-gap: 16px;
+        .technic__card{
+            display: flex; 
+            flex-direction: column;
+            justify-content: top;
+            text-align: left;
+            min-height: 160px;
+            min-width: 240px;
+            background-color: white;
+            border: 2px solid $border-color ;
+            border-radius:8px;
+    }
+}
+}
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+    .technic__wrapper{
+        padding-right: 60px;
+        .technic__card{
+            &.technic__card__4{
+            display: flex;
+            }
+    }
+    }
+  }
+
+
+@media (min-width : 1120px) and (max-width: 6000px) {
+    .sony{
+        display: flex;
+    }
+  }
+
+
+#show-more2{
+    color:  #1B1C21;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 170px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F8F8F8;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+}
+
+ #show-more-img2{
+    height: 15px;
+     width: 15px;
+     padding: 0 0 0 35px;
+     transform: rotateX(0);
+}
+
+.show2{
+    display: none;
+  }
+  @media (min-width : 768px) and (max-width: 6000px) {
+    .show2{
+        display: block;
+      }
+  }
+
+
+#dots2{
+    position: absolute;
+  }
+   
+  
+

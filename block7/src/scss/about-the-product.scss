@@ -1,0 +1,186 @@
+$box-h4-color: #7E7E82;
+$box-p-color:#1B1C21;
+$btn-color:#FF3E79;
+
+.about-the-product{
+    .title{
+        margin-top: 20px;
+    }
+    .swiper-slide{
+        display: flex; 
+        flex-direction: column;
+        justify-content: top;
+        text-align: left;
+        min-height: 200px;
+        min-width: 260px;
+        max-height: 0px;
+        max-width: 260px;
+        margin-top: 16px ;
+        margin-left: 16px;
+        background-color: white;
+        border: 2px solid $border-color ;
+        border-radius:8px;
+        font-weight: 600;
+        color:#1B1C21;
+    }
+    .service{
+        height: 56px;
+        width: 228px;  
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .price{
+        height: 38px;
+        width: 74px;     
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    .term{
+        height: 38px;
+        width: 90px;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    h4{
+        color:$box-h4-color;
+        opacity: 72%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 5px;
+    }
+    p{
+        color:$box-p-color;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    button{
+        position: absolute;
+        top: 145px;
+        left:120px;
+        background-color: $btn-color;
+        height: 32px;
+        width: 119px;
+        border: none;
+        border-radius:20px;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        padding-left: 12px;
+        text-transform: uppercase;
+        background-image: url('../img/dropdown.svg');
+        background-position: 95px;
+        background-size: 7px 9.63px;
+        background-repeat:no-repeat;
+    }
+    .aboutPrice{
+        padding: 20px;
+        font-size: 14px;
+        max-width: 430px;
+        color:#1B1C21;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+    a{
+        padding: 20px;
+        font-size: 18px;
+        color:#1B1C21;
+        letter-spacing: -0.2px;
+        font-weight: 600;
+        line-height: 24px;
+        background-image: url(../img/dropdownpink.svg);
+        background-repeat:no-repeat;
+        background-position: 360px 28px;
+        background-size:6px 10px;
+    }
+}
+
+.about-the-product__container{
+        width: 100%;
+        border: none;
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 20px;
+        height: 324px;
+        width: 93%;
+        
+    & thead th {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        opacity: 73%;
+        text-align: left;
+        color: #444441;
+        padding-bottom: 20px;
+    }
+    & tbody{
+        border-left: 15px solid white;
+        border-right:15px solid white;
+        border-top:2px solid white;
+        border-radius: 20px;
+        & input{
+            background-color: $btn-color;
+            height: 32px;
+            width: 119px;
+            border: none;
+            border-radius:20px;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 12px;
+            text-transform: uppercase;
+            background-image: url('../img/dropdown.svg');
+            background-position: 95px;
+            background-size: 7px 9.63px;
+            background-repeat:no-repeat;
+        }
+    }
+    & tbody td {
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        background-color: #FFFFFF;
+        border-top: 1px solid #EAEAEA;
+    }
+}
+  
+@media (min-width : 0px) and (max-width: 767px) {
+    .about-the-product__container{
+        display: none;
+      
+    }
+}
+
+@media (min-width : 0px) and (max-width: 767px) {
+    .about-the-product{
+        a{
+            display: block;
+            padding: 20px;
+            font-size: 18px;
+            color:#1B1C21;
+            letter-spacing: -0.2px;
+            font-weight: 600;
+            line-height: 24px;
+            background-image: url(../img/dropdownpink.svg);
+            background-repeat:no-repeat;
+            background-position: 160px 52px;
+            background-size:6px 10px;
+            height: 50px;
+            width: 220px;
+        }
+    }
+}
+

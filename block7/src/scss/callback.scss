@@ -1,0 +1,174 @@
+.callback{
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -400px;
+    background: white;
+    transition: all 0.5s;
+    width: 320px;
+    height: 100vh;
+    color: #7E7E82;
+    overflow-y: auto;
+    box-shadow: -1px 0 30px rgba(0,0,0,0.4);
+    .callback-exit{
+        margin: 20px;
+        font-size: 30px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: white;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        color: #BFE2FF;    
+        transition: all 280ms ease-in-out;
+    }
+    .callback-exit:hover{
+        transform: rotate(180deg) scale(1.1);    
+        color: #b42828;
+    }
+    h2{
+        font-size: 24px;
+        color:#1B1C21;
+        letter-spacing: -0.6px;
+        background-image: url(../img/highlight.svg);
+        background-repeat: no-repeat;
+        background-size: 5px 40px;
+        height: 50px;
+        width: 288px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    input{
+        display: block;
+        width: 288px;
+        height: 50px;
+        margin-left: 15px;
+        font-family: inherit;
+        background-color: #fff;
+        // background-clip: padding-box;
+        border: 1px solid #EAEAEA;
+        border-radius: 0.5rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    input::placeholder {
+        font-size: 18px;
+        padding-left: 20px;
+        color: #B5B6BC;
+      }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      display: none;
+      }
+    p{
+        height: 64px;
+        width: 288px;
+        font-size: 14px;
+        padding: 15px;
+        color:#7E7E82;
+        line-height: 16px;
+        font-weight: 600;
+        padding-top: 20px;
+        span{
+            color: #FF3E79;
+        }
+      }
+    .send{
+            height: 30px;
+            width: 80px;
+            background-color: $btn-color;
+            height: 32px;
+            width: 119px;
+            border: none;
+            border-radius:20px;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 12px;
+            text-transform: uppercase;
+            background-image: url('../img/dropdown.svg');
+            background-position: 95px;
+            background-size: 7px 9.63px;
+            background-repeat:no-repeat;
+            margin-left: 185px;
+      }
+}
+.closeModalCall{
+    left: -400px;
+    transition: all 0.5s;  
+}
+
+.closeModalCall__active{
+    display: block;
+     position: fixed;
+     top: 0;
+     right: 100px;
+     width: 111%;
+     height: 100vh;
+     background-color: rgba(100%, 100%, 100%, 0.91);
+     z-index: 2;
+     transition: all 0.5s;  
+    }
+
+
+.callback{
+    display: none;
+}
+
+.callback__active{
+    display: block;
+    right: 0px;
+}
+.callback-exit__CloseModalCall{
+    display: none;
+}
+
+@media (min-width : 0px) and (max-width: 767px) {
+    .closeModalCall__active{
+        display: block;
+         position: fixed;
+         top: 0;
+         right: 100px;
+         width: 150%;
+         height: 100vh;
+         background-color: rgba(100%, 100%, 100%, 0.91);
+         z-index: 2;
+         transition: all 0.5s;  
+         z-index: 1;
+        }
+   }
+
+
+   @media (min-width : 1024px) and (max-width: 6000px) {
+
+        .callback-exit{
+            display: none;
+        }
+        &.callback-exit__CloseModalCall--active{
+                display: block;
+                font-size: 30px;
+                border-radius: 20px;
+                border-style: solid;
+                border-color: white;
+                position: absolute;
+                top: 20px;
+                right: 100px;
+                z-index: 1;
+                cursor: pointer;
+                transform: rotate(90deg);
+                color: #BFE2FF;    
+                transition: all 280ms ease-in-out; 
+                }
+        &.callback-exit__CloseModalCall--active:hover {
+            transform: rotate(180deg) scale(1.1);    
+            color: #b42828;
+        } 
+          }
+    
+
+   

@@ -45,11 +45,11 @@
   //     document.documentElement.style.scrollBehavior = '';
   //   },
   // }
-
  
 
   //всплывающее меню 
-  document.addEventListener('DOMContentLoaded', () => {
+  export let navMenu = () => {
+   document.addEventListener('DOMContentLoaded', () => {
  
     // Кнопка по которой происходит клик
     let callBackButton = document.getElementById('checkbox_toggle');
@@ -79,19 +79,16 @@
       modal1.classList.remove('side__panel__active');
       scrollController.enabledScroll();
       closeModal.classList.remove('closeModal__active');
-
     }
-
-   
-   
   });
+}
 
 
-
+ 
 
   //скролл боди
 
-  const scrollController = {
+  export const scrollController = {
     scrollPosition: 0,
     disabledScroll() {
       scrollController.scrollPosition = window.scrollY;
@@ -112,13 +109,15 @@
       document.documentElement.style.scrollBehavior = '';
     },
   }
+ 
+ 
 
   
 
 
   //показать все
   
-  function seeMore() {
+export function seeMore() {
       let dots = document.getElementById("dots");
       let moreText = document.querySelectorAll(".hidden");
       let item1 = moreText[0];
@@ -157,7 +156,7 @@
       }
     }
   
-    function hide(){
+ function hide(){
       let dots = document.getElementById("dots");
       let moreText = document.querySelectorAll(".hidden");
       let item1 = moreText[0];
@@ -177,4 +176,5 @@
       } 
   }
   
+ 
    

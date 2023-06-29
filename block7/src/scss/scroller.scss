@@ -1,0 +1,118 @@
+.heading{
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 20px;
+ }
+ @media (min-width : 1120px) and (max-width: 4000px) {
+    .heading{
+        padding: 40px 0 20px;
+     }
+}
+
+ .main{
+    background-color: #F8F8F8 ;
+}
+
+.content-name{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:30px;
+    width: 350px;
+    padding-left: 15px;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+@media (min-width : 768px) and (max-width: 1119px) {
+    .content-name{
+        padding-left: 20px;
+    }
+   }
+
+@media (min-width : 1120px) and (max-width: 4000px) {
+    .content-name{
+        width: 650px;
+    }
+}
+
+.img{
+    height: 45px;
+}
+
+.scroller{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.gradient{
+    position: absolute;
+    top: 10;
+    right: 0;
+    height: 45px;
+    width: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,248,248,0.938813025210084) 70%);
+    
+    
+}
+
+.link{
+    display: inline-block; 
+    height: 20px;
+    color: #7E7E82; 
+    font-size: 17px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+@media (min-width : 1120px) and (max-width: 4000px) {
+    .link{
+    padding: 10px 20px 10px 20px;
+  }
+}
+.link:active{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: white;
+    
+}
+.scroller__items{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    overflow-x: auto;
+    list-style-type: none;
+    white-space: nowrap;
+    padding-left: 16px;
+    z-index: 0.1;
+}
+@media (min-width : 1120px) and (max-width: 4000px) {   
+  .scroller__items{
+    flex-wrap: wrap;
+  }
+}
+
+
+.scroller__items::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  
+  ul.scroller__items li.selected a {
+    color: #7E7E82;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  ul.scroller__items li a:hover{
+    color: #7E7E82;
+  }
+
+  .el1-link--mod{
+    display: none;
+ }

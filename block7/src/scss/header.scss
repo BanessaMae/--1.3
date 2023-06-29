@@ -1,0 +1,163 @@
+.header{
+    background-color: white;
+    border-bottom: 1px solid #D9FFF5 ;
+    min-height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+@media (min-width : 768px) and (max-width: 1439px) {
+    .header{
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+}
+@media (min-width : 1440px) and (max-width: 4000px) {
+    .header{
+        float: right;
+        display: flex;
+        width: 420px;
+        align-items: center;
+        padding: 30px 0 0px;
+        height: 60px;
+        background-color: #F8F8F8;
+        border-bottom: none;
+    }
+}
+
+ 
+ /* Переделанный хедер */
+
+ 
+ .navbar{
+    background-image: url(../img/navbar.svg);
+ }
+
+ 
+ @media (min-width : 768px) and (max-width: 1440px) {
+    .logo{
+        padding-left: 15px;
+
+     }
+   }
+
+ @media (min-width : 768px) and (max-width: 1440px) {
+    .divider,.logo{
+       background-image:url(../img/divider.svg);
+       background-repeat: no-repeat;
+       background-position:left;
+       min-width: 2px;
+       min-height: 32px;
+    }
+   }
+  
+
+   .divider+.logo{
+    display: none;
+ }
+
+ .divider.dividerSmall{
+    background-image:url(../img/divider.svg);
+       background-repeat: no-repeat;
+       background-position:left;
+       min-width: 2px;
+       min-height: 32px;
+    display: block;
+ }
+ @media (min-width : 1440px) and (max-width: 6000px) {
+   .divider.dividerSmall{
+      display: none;
+   }
+}
+ 
+ 
+
+ @media (min-width : 1440px) and (max-width: 4000px) {
+    .navbar{
+        display: none;
+     }
+}
+
+.header__line--disappear{
+       display: none;
+    } 
+ @media (min-width : 768px) and (max-width: 1440px) {
+         .header__line--disappear{
+            display:block;
+         }
+        }
+    
+.buttonCirlce{
+    height: 40px;
+    width: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+ .buttonCirlce__phone{
+    background-image: url(../img/phone.svg) ;
+    border:0;
+ }
+
+ .phone--disappear{
+    display: none;
+ }
+
+ @media (min-width : 768px) and (max-width: 1439px) {
+    .phone--disappear {
+        display:block;
+     }
+   }
+
+ .buttonCirlce__message{
+    background-image: url(../img/message1.svg) ;
+    border:0;
+ }
+ .message--disappear{
+    display: none;
+ }
+ @media (min-width : 768px) and (max-width: 1439px) {
+    .message--disappear{
+        display:block;
+     }
+   }
+
+ .buttonCirlce__office{
+    background-image: url(../img/office.svg) ;
+    border:0;
+ }
+ 
+ .office--disappear{
+    display: none;
+ }
+
+ @media (min-width : 768px) and (max-width: 1439px) {
+    .office--disappear{
+        display:block;
+     }
+   }
+
+.buttonCirlce__settings{
+    background-image: url(../img/settings.svg) ;
+    border:0;
+}
+
+
+.text__settings{
+    display: none;
+}
+
+.buttonCirlce__search{
+    background-image: url(../img/search.svg) ;
+    border:0;
+}
+
+
+.text__search{
+    display: none;
+}
