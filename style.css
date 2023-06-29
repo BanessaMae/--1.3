@@ -1703,7 +1703,7 @@ ul.scroller__items li a:hover {
     border-color: white;
     position: absolute;
     top: 20px;
-    right: 60px;
+    right: 100px;
     z-index: 1;
     cursor: pointer;
     transform: rotate(90deg);
@@ -1867,7 +1867,7 @@ ul.scroller__items li a:hover {
     border-color: white;
     position: absolute;
     top: 20px;
-    right: 60px;
+    right: 100px;
     z-index: 1;
     cursor: pointer;
     transform: rotate(90deg);
