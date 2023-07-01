@@ -460,6 +460,10 @@ template {
 .img {
   height: 45px; }
 
+@media (min-width: 1440px) and (max-width: 6000px) {
+  .img {
+    height: 60px; } }
+
 .scroller {
   display: flex;
   justify-content: center;
@@ -617,7 +621,7 @@ ul.scroller__items li a:hover {
 .technic .swiper-slide {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: start;
   text-align: left;
   min-height: 160px;
   min-width: 240px;
@@ -1073,7 +1077,6 @@ ul.scroller__items li a:hover {
   position: relative;
   z-index: 1;
   cursor: pointer;
-  /* transform: rotate(45deg); */
   color: #BFE2FF;
   transition: all 280ms ease-in-out; }
 
@@ -1084,6 +1087,10 @@ ul.scroller__items li a:hover {
 .side-panel__exit {
   background-image: url(./static/exit.svg); }
 
+@media (min-width: 1440px) and (max-width: 6000px) {
+  .side_panel__header .side-panel__exit {
+    display: none; } }
+
 .side-panel__logo {
   padding-right: 60px;
   background-image: none; }
@@ -1092,9 +1099,15 @@ ul.scroller__items li a:hover {
   .side-panel__logo {
     padding-right: 60px; } }
 
+@media (min-width: 1440px) and (max-width: 6000px) {
+  .side_panel__header .side-panel__logo {
+    display: block;
+    padding-right: 130px; } }
+
 .side-panel__search {
   background-image: url(./static/search_nav.svg);
-  transition: all 280ms ease-in-out; }
+  transition: all 280ms ease-in-out;
+  margin-right: 25px; }
 
 .side-panel__search:hover {
   transform: rotate(10deg) scale(1.1);
@@ -1194,7 +1207,9 @@ ul.scroller__items li a:hover {
   cursor: pointer;
   text-decoration: none;
   color: #1B1C21;
-  transition: all 180ms ease-in-out; }
+  transition: all 180ms ease-in-out;
+  letter-spacing: -0.6px;
+  line-height: 32px; }
 
 .nav__footer__link:hover {
   transform: rotate(0deg) scale(1);
@@ -1217,7 +1232,7 @@ ul.scroller__items li a:hover {
 .technic .swiper-slide {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: start;
   text-align: left;
   min-height: 160px;
   min-width: 240px;
@@ -1932,9 +1947,17 @@ body {
   .line {
     display: none; }
   .text__settings {
-    display: block; }
+    display: block;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding-bottom: 3px; }
   .text__search {
-    display: block; }
+    display: block;
+    display: block;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding-right: 0;
+    padding-bottom: 3px; }
   .el1-link {
     display: block; }
   .header__settings {
@@ -1943,7 +1966,7 @@ body {
     float: left;
     display: flex;
     width: 700px;
-    padding: 60px 0 0px;
+    padding: 36px 0 0px;
     height: 60px; }
   .main__scroller {
     display: inline-block; }
