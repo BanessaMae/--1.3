@@ -38,6 +38,11 @@
 .img{
     height: 45px;
 }
+@media (min-width : 1440px) and (max-width: 6000px) {
+    .img{
+        height: 60px;
+    }
+}
 
 .scroller{
     display: flex;

@@ -5,7 +5,7 @@
     .swiper-slide{
         display: flex; 
         flex-direction: column;
-        justify-content: top;
+        justify-content: start;
         text-align: left;
         min-height: 160px;
         min-width: 240px;
@@ -59,7 +59,7 @@
     .technic__card{
         display: flex; 
         flex-direction: column;
-        justify-content: top;
+        justify-content: start;
         text-align: left;
         min-height: 160px;
         min-width: 224px;
@@ -88,13 +88,13 @@
     .technic__wrapper{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: top;
         grid-column-gap: 18px;
         grid-row-gap: 16px;
         .technic__card{
             display: flex; 
             flex-direction: column;
-            justify-content: top;
+            justify-content: start;
             text-align: left;
             min-height: 160px;
             min-width: 240px;
