@@ -178,3 +178,23 @@ export function seeMore() {
   
  
    
+  let arr = [1, 2, 3, 4, 5, 6, 7, true, undefined, NaN];
+  console.log(arr.filter(inRange(3, 6)));
+  
+const inRange = (a, b) => {
+  //code here
+  if(a<arr.length<b){
+      return true;
+  } else if(a > b){
+      return false;
+  }
+ return inRange;
+};
+
+const inArray = arr => {
+  //code here
+};
+
+const notInArray = arr =>  {
+  //code here
+};

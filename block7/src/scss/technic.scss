@@ -139,7 +139,22 @@
     appearance: none;
     touch-action: manipulation;  
 }
-
+#hide-more2{
+    display: none;
+    color:  #1B1C21;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 170px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F8F8F8;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+    }
  #show-more-img2{
     height: 15px;
      width: 15px;

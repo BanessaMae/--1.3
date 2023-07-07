@@ -278,14 +278,14 @@ display: none;
   }
 
      
-.samsung2 {display:none;} 
-@media (min-width : 1120px) and (max-width: 6000px) {
+// .samsung2 {display:none;} 
+// @media (min-width : 1120px) and (max-width: 6000px) {
     
-  }
-.apple2{display:none;}
-@media (min-width : 1120px) and (max-width: 6000px) {
+//   }
+// .apple2{display:none;}
+// @media (min-width : 1120px) and (max-width: 6000px) {
     
-  }
+//   }
 
   
  
@@ -296,6 +296,23 @@ display: none;
   } */
 
   #show-more{
+    color:  #1B1C21;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 170px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F8F8F8;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+    }
+
+    #hide-more{
+    display: none;
     color:  #1B1C21;
     font-size: 18px;
     font-weight: 600;

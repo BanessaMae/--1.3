@@ -217,149 +217,202 @@ document.addEventListener('DOMContentLoaded', () => {
    
  
  
-   //показать все Ремонт различных видов техники
+   //показать все Ремонт техники различных брендов
    
 
-   let showMore = document.getElementById('show-more');
-   showMore.addEventListener('click', seeMore);
-   showMore.addEventListener('click', hide);
+//    let showMore = document.getElementById('show-more');
+//    showMore.addEventListener('click', seeMore);
+//    showMore.addEventListener('click', hide);
 
 
-function seeMore() {
-       let dots = document.getElementById("dots");
-       let moreText = document.querySelectorAll(".hidden");
-       let item1 = moreText[0];
-       let item2 = moreText[1];
-       let item3 = moreText[2];
-       let item4 = moreText[3];
-       let item5 = moreText[4];
+// function seeMore() {
+//        let dots = document.getElementById("dots");
+//        let moreText = document.querySelectorAll(".hidden");
+//        let item1 = moreText[0];
+//        let item2 = moreText[1];
+//        let item3 = moreText[2];
+//        let item4 = moreText[3];
+//        let item5 = moreText[4];
     
-       let btnText = document.getElementById("show-more");
-       let img = document.getElementById("show-more-img");
+//        let btnText = document.getElementById("show-more");
+//        let img = document.getElementById("show-more-img");
        
    
        
-       if (dots.style.display === "none") {
-         dots.style.display = "flex";
-         btnText.innerHTML = "Показать всё"; 
-         item1.style.display = "none";
-         item2.style.display = "none";
-         item3.style.display = "none";
-         item4.style.display = "none";
-         item5.style.display = "none";
-         img.style.transform = "rotate(0deg)";
-         img.style.padding = "0 0 0 35px ";
+//        if (dots.style.display === "none") {
+//          dots.style.display = "flex";
+//          btnText.innerHTML = "Показать всё"; 
+//          item1.style.display = "none";
+//          item2.style.display = "none";
+//          item3.style.display = "none";
+//          item4.style.display = "none";
+//          item5.style.display = "none";
+//          img.style.transform = "rotate(0deg)";
+//          img.style.padding = "0 0 0 35px ";
        
    
-       } else {
-         dots.style.display = "none";
-         btnText.innerHTML = "Скрыть"; 
-         item1.style.display = "flex";
-         item2.style.display = "flex";
-         item3.style.display = "flex";
-         item4.style.display = "flex";
-         item5.style.display = "flex";
-         img.style.transform = "rotate(180deg)";
-         img.style.padding = "0 35px 0 0";
-       }
-     }
+//        } else {
+//          dots.style.display = "none";
+//          btnText.innerHTML = "Скрыть"; 
+//          item1.style.display = "flex";
+//          item2.style.display = "flex";
+//          item3.style.display = "flex";
+//          item4.style.display = "flex";
+//          item5.style.display = "flex";
+//          img.style.transform = "rotate(180deg)";
+//          img.style.padding = "0 35px 0 0";
+//        }
+//      }
   
    
-  function hide(){
-       let dots = document.getElementById("dots");
-       let moreText = document.querySelectorAll(".hidden");
-       let item1 = moreText[0];
-       let item2 = moreText[1];
-       let item3 = moreText[2];
-       let item4 = moreText[3];
-       let item5 = moreText[4];
+//   function hide(){
+//        let dots = document.getElementById("dots");
+//        let moreText = document.querySelectorAll(".hidden");
+//        let item1 = moreText[0];
+//        let item2 = moreText[1];
+//        let item3 = moreText[2];
+//        let item4 = moreText[3];
+//        let item5 = moreText[4];
  
     
-       let btnText = document.getElementById("show-more");
-       let img = document.getElementById("show-more-img");
+//        let btnText = document.getElementById("show-more");
+//        let img = document.getElementById("show-more-img");
        
-       if (window.innerWidth >= 1020) {
+//        if (window.innerWidth >= 1020) {
         
-         item1.style.display = "flex";
-         item2.style.display = "flex";
+//          item1.style.display = "flex";
+//          item2.style.display = "flex";
        
          
-       } 
-   }
- 
+//        } 
+//    }
 
   //  показать все Ремонт различных видов техники
    
-  let showMore2 = document.getElementById('show-more2');
-  showMore2.addEventListener('click', seeMore2);
-  showMore2.addEventListener('click', hide2);
-function seeMore2() {
-       let dots2 = document.getElementById("dots2");
-       let moreText2 = document.querySelectorAll(".hidden");
-       let item1 = moreText2[5];
-       let item2 = moreText2[6];
-       let item3 = moreText2[7];
-       let item4 = moreText2[8];
-       let item5 = moreText2[9];
-       let item6 = moreText2[10];
-       let item7 = moreText2[11];
-       let item8 = moreText2[12];
+//   let showMore2 = document.getElementById('show-more2');
+//   showMore2.addEventListener('click', seeMore2);
+//   showMore2.addEventListener('click', hide2);
+// function seeMore2() {
+//        let dots2 = document.getElementById("dots2");
+//        let moreText2 = document.querySelectorAll(".hidden");
+//        let item1 = moreText2[5];
+//        let item2 = moreText2[6];
+//        let item3 = moreText2[7];
+//        let item4 = moreText2[8];
+//        let item5 = moreText2[9];
+//        let item6 = moreText2[10];
+//        let item7 = moreText2[11];
+//        let item8 = moreText2[12];
     
-       let btnText2 = document.getElementById("show-more2");
-       let img2 = document.getElementById("show-more-img2");
+//        let btnText2 = document.getElementById("show-more2");
+//        let img2 = document.getElementById("show-more-img2");
        
        
-       if (dots2.style.display === "none") {
-         dots2.style.display = "flex";
-         btnText2.innerHTML = "Показать всё"; 
-         item1.style.display = "none";
-         item2.style.display = "none";
-         item3.style.display = "none";
-         item4.style.display = "none";
-         item5.style.display = "none";
-         item6.style.display = "none";
-         item7.style.display = "none";
-         item8.style.display = "none";
-         img2.style.transform = "rotate(0deg)";
-         img2.style.padding = "0 0 0 35px ";
+//        if (dots2.style.display === "none") {
+//          dots2.style.display = "flex";
+//          btnText2.innerHTML = "Показать всё"; 
+//          item1.style.display = "none";
+//          item2.style.display = "none";
+//          item3.style.display = "none";
+//          item4.style.display = "none";
+//          item5.style.display = "none";
+//          item6.style.display = "none";
+//          item7.style.display = "none";
+//          item8.style.display = "none";
+//          img2.style.transform = "rotate(0deg)";
+//          img2.style.padding = "0 0 0 35px ";
        
    
-       } else {
-         dots2.style.display = "none";
-         btnText2.innerHTML = "Скрыть"; 
-         item1.style.display = "flex";
-         item2.style.display = "flex";
-         item3.style.display = "flex";
-         item4.style.display = "flex";
-         item5.style.display = "flex";
-         item6.style.display = "flex";
-         item7.style.display = "flex";
-         item8.style.display = "flex";
-         img2.style.transform = "rotate(180deg)";
-         img2.style.padding = "0 35px 0 0";
-       }
-     }
+//        } else {
+//          dots2.style.display = "none";
+//          btnText2.innerHTML = "Скрыть"; 
+//          item1.style.display = "flex";
+//          item2.style.display = "flex";
+//          item3.style.display = "flex";
+//          item4.style.display = "flex";
+//          item5.style.display = "flex";
+//          item6.style.display = "flex";
+//          item7.style.display = "flex";
+//          item8.style.display = "flex";
+//          img2.style.transform = "rotate(180deg)";
+//          img2.style.padding = "0 35px 0 0";
+//        }
+//      }
   
    
-  function hide2(){
-       let dots2 = document.getElementById("dots2");
-       let moreText2 = document.querySelectorAll(".hidden");
-       let item1 = moreText2[5];
-       let item2 = moreText2[6];
-       let item3 = moreText2[7];
-       let item4 = moreText2[8];
-       let item5 = moreText2[9];
-       let item6 = moreText2[10];
-       let item7 = moreText2[11];
-       let item8 = moreText2[12];
-       let btnText2 = document.getElementById("show-more2");
-       let img2 = document.getElementById("show-more-img2");
+//   function hide2(){
+//        let dots2 = document.getElementById("dots2");
+//        let moreText2 = document.querySelectorAll(".hidden");
+//        let item1 = moreText2[5];
+//        let item2 = moreText2[6];
+//        let item3 = moreText2[7];
+//        let item4 = moreText2[8];
+//        let item5 = moreText2[9];
+//        let item6 = moreText2[10];
+//        let item7 = moreText2[11];
+//        let item8 = moreText2[12];
+//        let btnText2 = document.getElementById("show-more2");
+//        let img2 = document.getElementById("show-more-img2");
        
-       if (window.innerWidth >= 1120) {
+//        if (window.innerWidth >= 1120) {
         
-        item1.style.display = "flex";
+//         item1.style.display = "flex";
       
-       
          
-       } 
-   }
+//        } 
+//    }
+
+//переделанная кнопка 
+
+
+var showMoreBtn = document.getElementById("show-more");
+var hideBtn = document.getElementById("hide-more");
+var hiddenSlides = document.querySelectorAll(".brands__wrapper .hidden");
+
+showMoreBtn.addEventListener("click", function() {
+  hiddenSlides.forEach(function(slide) {
+    slide.classList.remove("hidden");
+  });
+
+  showMoreBtn.style.display = "none";
+  hideBtn.style.display = "inline-block";
+});
+
+hideBtn.addEventListener("click", function() {
+  hiddenSlides.forEach(function(slide) {
+    slide.classList.add("hidden");
+  });
+
+  showMoreBtn.style.display = "inline-block";
+  hideBtn.style.display = "none";
+});
+
+
+
+var showMoreBtn2 = document.getElementById("show-more2");
+var hideBtn2 = document.getElementById("hide-more2");
+var hiddenSlides2 = document.querySelectorAll(".technic__wrapper .hidden");
+
+showMoreBtn2.addEventListener("click", function() {
+  hiddenSlides2.forEach(function(slide) {
+    slide.classList.remove("hidden");
+  });
+
+  showMoreBtn2.style.display = "none";
+  hideBtn2.style.display = "inline-block";
+});
+
+hideBtn2.addEventListener("click", function() {
+  hiddenSlides2.forEach(function(slide) {
+    slide.classList.add("hidden");
+  });
+
+  showMoreBtn2.style.display = "inline-block";
+  hideBtn2.style.display = "none";
+});
+
+
+
+
+
+
