@@ -733,6 +733,27 @@ ul.scroller__items li a:hover {
           appearance: none;
   touch-action: manipulation; }
 
+#hide-more2 {
+  display: none;
+  color: #1B1C21;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  width: 170px;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #F8F8F8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  touch-action: manipulation; }
+
 #show-more-img2 {
   height: 15px;
   width: 15px;
@@ -959,18 +980,33 @@ ul.scroller__items li a:hover {
   .sony {
     display: flex; } }
 
-.samsung2 {
-  display: none; }
-
-.apple2 {
-  display: none; }
-
 /* @media (min-width : 1120px) and (max-width: 6000px) {
     #more{
         display: block;
       }
   } */
 #show-more {
+  color: #1B1C21;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  width: 170px;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #F8F8F8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  touch-action: manipulation; }
+
+#hide-more {
+  display: none;
   color: #1B1C21;
   font-size: 18px;
   font-weight: 600;
@@ -1325,6 +1361,27 @@ ul.scroller__items li a:hover {
     display: flex; } }
 
 #show-more2 {
+  color: #1B1C21;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  width: 170px;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #F8F8F8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  touch-action: manipulation; }
+
+#hide-more2 {
+  display: none;
   color: #1B1C21;
   font-size: 18px;
   font-weight: 600;
